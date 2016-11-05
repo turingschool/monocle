@@ -1,0 +1,52 @@
+<h1><%= @company.name %></h1>
+<table class="table-condensed table-hover">
+  <tr>
+    <th>
+      Address:
+    </th>
+    <td>
+      <%= @company.street_address %><br />
+      <%= @company.city_state_zip %>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Phone:
+    </th>
+    <td>
+      <%= @company.phone %>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Website:
+    </th>
+    <td>
+      <%= @company.website %>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Headquarters:
+    </th>
+    <td>
+      <%= @company.headquarters %>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Products/Services:
+    </th>
+    <td>
+      <%= @company.products_services %>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Person in Charge:
+    </th>
+    <td>
+      <%= @company.person_in_charge %>
+    </td>
+  </tr>
+</table>

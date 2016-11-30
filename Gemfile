@@ -48,6 +48,7 @@ group :test do
   gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
+  gem 'mocha'
 end
 
 group :development do

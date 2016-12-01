@@ -38,12 +38,12 @@ group :development, :test do
   gem 'pry-rails'
   gem "factory_girl_rails", "~> 4.0"
   gem 'faker'
+  gem 'launchy'
+  gem 'capybara'
 end
 
 group :test do
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'vcr'

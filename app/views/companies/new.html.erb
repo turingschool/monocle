@@ -1,0 +1,40 @@
+<%= form_for(@company) do |f| %>
+  <%= f.label :name   %>
+  <%= f.text_field :name %>
+
+  <%= f.label :street_address %>
+  <%= f.text_field :street_address %>
+
+  <%= f.label :city_state_zip %>
+  <%= f.text_field :city_state_zip %>
+
+  <%= f.label :city %>
+  <%= f.collection_select :city_id, City.all, :id,:name %>
+
+  <%= f.label :category %>
+  <%= f.collection_select :category_id, Category.all, :id,:name %>
+
+  <%= f.label :state %>
+  <%= f.collection_select :state_id, State.all, :id,:name %>
+
+  <%= f.label :zip_code %>
+  <%= f.collection_select :zip_code_id, ZipCode.all, :id,:zip_code %>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+
+  <%= f.label :website %>
+  <%= f.text_field :website %>
+
+  <%= f.label :headquarters %>
+  <%= f.text_field :headquarters %>
+
+  <%= f.label :products_services %>
+  <%= f.text_field :products_services %>
+
+  <%= f.label :person_in_charge %>
+  <%= f.text_field :person_in_charge %>
+
+  <%= f.submit %>
+
+<% end %>

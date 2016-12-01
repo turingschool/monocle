@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post '/logout',              to: 'sessions#destroy'
   get  '/sign_in_with_slack',  to: 'sessions#new'
 
-  resources :companies,         only: [:index, :show]
+  resources :companies,         only: [:index, :show, :new, :create]
   resources :cities,            only: [:index, :show]
   resources :starred_companies, only: [:index, :create, :destroy]
 end

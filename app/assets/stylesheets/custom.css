@@ -1,0 +1,36 @@
+ .logo {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #000000;
+ }
+
+ .logo img {
+   align-content: left;
+   width: 90px;
+   height: 90px;
+ }
+
+ .card {
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 5px;
+  width: 100%;
+}
+
+.big-logo {
+display: inline-block;
+height: 300px;
+width: 300px;
+overflow: hidden;
+border-radius: 5px;
+border: 1px solid #000000;
+}
+
+.big-logo img {
+ align-content: left;
+ width: 290px;
+ height: 290px;
+}

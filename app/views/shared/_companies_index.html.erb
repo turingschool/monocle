@@ -1,7 +1,23 @@
 <% companies.each do |company| %>
-  Company Name: <%= link_to company.name, company_path(company) %><br />
-  <%= company.street_address %><br />
-  <%= company.city_state_zip %><br />
-  <%= company.phone %><br />
-  <%= company.website %><br /><br />
+  <div class='card card-inverse col-md-4'>
+    <div class='logo'>
+      <%= image_tag company.logo.url, class: 'card-img-top' %>
+    </div>
+    <div class='card-block'>
+      <h4 class='card-title'>
+        Company Name: <%= link_to company.name, company_path(company) %><br />
+      </h4>
+      <% company.locations.each do |location| %>
+        <p class='card-text'>
+          <%= location.street_address %><br />
+          <%= location.street_address_2 %><br />
+          <%= location.city_state_zip %><br />
+          <%= location.phone %><br />
+        </p>
+      <% end %>
+      <p class='card-text'>
+        <%= company.website %>
+      </p>
+    </div>
+  </div>
 <% end %>

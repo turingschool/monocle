@@ -2,8 +2,8 @@ module SeedFixtureData
   def self.run(path)
     lines = load_file(path)
     companies = group_into_companies(lines)
-    category = create_category(path)
-    load_companies(category, companies)
+    industry = create_industry(path)
+    load_companies(industry, companies)
   end
 
   private
@@ -13,9 +13,9 @@ module SeedFixtureData
       raw_lines.map { |line| line.chomp }
     end
 
-    def self.create_category(path)
-      category_name = File.basename(path, ".txt")
-      Category.find_or_create_by!(name: category_name)
+    def self.create_industry(path)
+      industry_name = File.basename(path, ".txt")
+      Industry.find_or_create_by!(name: industry_name)
     end
 
     def self.group_into_companies(lines)
@@ -26,33 +26,40 @@ module SeedFixtureData
       companies
     end
 
-    def self.load_companies(category, companies)
+    def self.load_companies(industry, companies)
       companies.each do |company|
         name              = company[0]
-        street_address    = company[1]
-        city_state_zip    = company[2]
-        phone             = company[3]
         website           = company[4]
         headquarters      = company[5].sub("Company headquarters: ", "")
         products_services = company[6].sub("Products/Services: ", "")
-        person_in_charge  = company[7].sub("Person in charge: ", "")
-        city              = company[2].split[0...-2].join(" ").gsub(",", "")
-        state             = company[2].split[-2]
-        zip_code          = company[2].split.last
 
-        category.companies << Company.new({
+        this_company = Company.create({
           name:              name,
-          street_address:    street_address,
-          city_state_zip:    city_state_zip,
-          phone:             phone,
           website:           website,
           headquarters:      headquarters,
           products_services: products_services,
-          person_in_charge:  person_in_charge,
-          city:              City.find_or_create_by(name: city),
-          state:             State.find_or_create_by(name: state),
-          zip_code:          ZipCode.find_or_create_by(zip_code: zip_code)
         })
+
+        industry.companies << this_company
+        this_company.locations << Location.create(create_location(company))
       end
+    end
+
+    def self.create_location(company)
+      street_address    = company[1]
+      city_state_zip    = company[2]
+      phone             = company[3]
+      primary_contact   = company[7].sub("Person in charge: ", "")
+      city              = company[2].split[0...-2].join(" ").gsub(",", "")
+      state             = company[2].split[-2]
+      zip_code          = company[2].split.last
+      {
+        street_address:  street_address,
+        phone:           phone,
+        primary_contact: primary_contact,
+        city:            city,
+        state:           state,
+        zip_code:        zip_code
+      }
     end
 end

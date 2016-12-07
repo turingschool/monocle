@@ -1,0 +1,37 @@
+<%= form_for @company, url: admin_company_path(@company) do |f| %>
+  <div class="form-group">
+    <%= f.text_field :name %>
+    <div class="col-md-4">
+      <%= f.label :name   %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.collection_select :industry_id, Industry.all, :id,:name %>
+    <div class="col-md-4">
+      <%= f.label :industry %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :website %>
+    <div class="col-md-4">
+      <%= f.label :website %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :headquarters %>
+    <div class="col-md-4">
+      <%= f.label :headquarters %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :products_services %>
+    <div class="col-md-4">
+      <%= f.label :products_services %>
+    </div>
+  </div>
+  <%= f.submit %>
+
+<% end %>

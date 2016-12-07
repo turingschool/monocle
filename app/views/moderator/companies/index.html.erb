@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location(s)</th>
+    <th>Approve/ Disapprove</th>
+  </tr>
+  <% @pending_companies.each do |company| %>
+    <% company.locations.each_with_index do |location, i| %>
+      <tr>
+        <td>
+          <% if i.zero? %>
+            <%= company.name %><br>
+            <strong>Headquarters: </strong><%= company.headquarters %><br>
+            <strong>Industries: </strong><%= company.industries.pluck(:name).join(', ') %><br>
+            <strong>Website: </strong><%= company.website %><br>
+          <% end %>
+        </td>
+        <td>
+          <strong>Street Address: </strong><%= location.street_address %>, <%= location.city_state_zip %><br>
+          <strong>Phone: </strong><%= location.phone %><br>
+          <strong>Primary Contact: </strong><%= location.primary_contact %>
+        </td>
+        <td>
+          <%= button_to "Approve", {controller: "moderator/companies", action: "update", approve: true, id: location.id}, method: :put %>
+          <%= button_to "Reject", {controller: "moderator/companies", action: "update", id: location.id}, method: :put %>
+          <%= button_to "Edit", edit_moderator_company_path(company) %>
+        </td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>

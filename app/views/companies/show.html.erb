@@ -1,12 +1,12 @@
 <h1><%= @company.name %></h1>
+<div class='big-logo'>
+  <%= image_tag @company.logo.url %>
+</div>
+<h3>Company Information</h3>
 <table class="table-condensed table-hover">
   <tr>
-    <th>Address:</th>
-    <td><%= @company.street_address %><br /><%= @company.city_state_zip %></td>
-  </tr>
-  <tr>
-    <th>Phone:</th>
-    <td><%= @company.phone %></td>
+    <th>Products/Services:</th>
+    <td><%= @company.products_services %></td>
   </tr>
   <tr>
     <th>Website:</th>
@@ -17,14 +17,59 @@
     <td><%= @company.headquarters %></td>
   </tr>
   <tr>
-    <th>Products/Services:</th>
-    <td><%= @company.products_services %></td>
+    <th>Company Size:</th>
+    <td><%= @company.size %> employees</td>
   </tr>
   <tr>
-    <th>Person in Charge:</th>
-    <td><%= @company.person_in_charge %></td>
+    <th>Industries:</th>
+    <td><% @company.industries.map do |industry| %>
+      <ul>
+        <li>
+            <%= industry.name %>
+        </li>
+      </ul>
+      <% end %>
+    </td>
   </tr>
+
 </table>
+
+<% if current_user.admin? %>
+  <%= link_to 'Edit Company Information', edit_admin_company_path(@company), class: "btn btn-default" %>
+<% end %>
+
+<h3><%= pluralize(@company.locations.count, 'Location') %></h3>
+
+<%= link_to 'Submit Additional Location', new_company_location_path(@company) %>
+
+    <% @company.approved_locations.each do |location | %>
+    <table class="table-condensed table-hover">
+      <tr>
+        <td>Address:</td>
+        <td><%= location.street_address %> <br />
+          <%= location.street_address_2 %></td>
+      </tr>
+      <tr>
+        <td>City, State Zip:</td>
+        <td><%= location.city_state_zip %></td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td><%= location.phone %></td>
+      </tr>
+      <tr>
+        <td>Primary Contact:</td>
+        <td><%= location.primary_contact %></td>
+      </tr>
+      <tr>
+        <td><% if current_user.admin? %>
+          <%= link_to 'Edit Location', edit_company_location_path(company_id: @company.id, id: location.id) %>
+          <% end %>
+        </td>
+      </tr>
+    </table>
+
+    <% end %>
 
 <% if current_user.companies.exists?(@company.id) %>
   <h4><i class="text-info">
@@ -35,3 +80,48 @@
     <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Star
   <% end %>
 <% end %>
+
+
+<h3>Notes</h3>
+<div id='notes' class='panel-group'>
+<% @company.notes.each do |note| %>
+  <div class='note-block panel panel-default'>
+    <div class='panel-body small'>
+    <% if current_user.id == note.user_id || current_user.admin? %>
+      <div class='btn-group pull-right'>
+        <a href="/companies/<%= @company.id %>/notes/<%= note.id %>/edit" class="edit-button btn btn-default btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        <a href="/companies/notes/delete?company_id=<%= @company.id %>&note_id=<%= note.id %>" class="delete-button btn btn-default btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+      </div>
+      <% end %>
+        <div class='pull-left'>
+          <h6>Author:
+            <%= note.user.username %>
+          </h6>
+          <h6>
+            <%= note.title %>
+          </h6>
+          <p>
+            <%= note.body %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div class='panel panel-default'>
+  <div class='panel-body'>
+    <%= form_for [@company, @company.notes.build] do |f| %>
+      <div class='form-group text-left'>
+        <%= f.text_field 'title', placeholder: 'Title' %>
+      </div>
+      <div class='form-group text-left'>
+        <%= f.text_area 'body', placeholder: 'Note' %>
+      </div>
+      <div class='btn-group'>
+        <%= f.submit 'Add Note' %>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>

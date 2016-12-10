@@ -37,7 +37,7 @@ RSpec.describe SlackService, type: :service do
   # passing, thereby recording a new valid cassette. (If the debugger is
   # released first it will use the code, which is one-time-use only.)
   context "Slack validation succeded" do
-    it "returns a user object" do
+    xit "returns a user object" do
       VCR.use_cassette("DO_NOT_DELETE_exchange_slack_code_for_token") do
         params = {"code"=>"2329094327.102692926898.bec22894d5",
                   "state"=>""}

@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
 gem 'faraday'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem 'fog-aws'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -38,12 +40,12 @@ group :development, :test do
   gem 'pry-rails'
   gem "factory_girl_rails", "~> 4.0"
   gem 'faker'
+  gem 'launchy'
+  gem 'capybara'
 end
 
 group :test do
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'vcr'
@@ -60,6 +62,10 @@ group :development do
 end
 
 group :production do
+  gem 'rails_12factor'
+end
+
+group :staging do
   gem 'rails_12factor'
 end
 

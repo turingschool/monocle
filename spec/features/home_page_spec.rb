@@ -9,7 +9,6 @@ RSpec.feature "User visits home page" do
       expect(page).to have_content("Welcome to Monocle")
       expect(page).to have_link("Sign in with Slack")
       expect(page).to_not have_css(".navbar")
-      expect(page).to_not have_content("Directory")
     end
   end
 
@@ -21,7 +20,6 @@ RSpec.feature "User visits home page" do
 
       expect(current_path).to_not eq(root_path)
       expect(page).to have_css(".navbar")
-      expect(page).to have_content("Directory")
     end
   end
 end

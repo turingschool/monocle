@@ -1,0 +1,7 @@
+<%= form_for ([@company, @note]) do |f| %>
+<%= f.label :title, 'Title' %>
+<%= f.text_field :title %>
+<%= f.label :body, 'Note' %>
+<%= f.text_field :body %>
+<%= f.submit "Update Note" %>
+<% end %>

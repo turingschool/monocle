@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="well">
+    <h2>Company Information</h2>
+    <%= form_for(@company) do |f| %>
+    <div class="form-group">
+      <%= f.text_field :name %>
+      <div class="col-md-4">
+        <%= f.label :name   %>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.text_field :website %>
+      <div class="col-md-4">
+        <%= f.label :website %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :headquarters %>
+      <div class="col-md-4">
+        <%= f.label :headquarters %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :products_services %>
+      <div class="col-md-4">
+        <%= f.label :products_services %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= select_tag :size, options_for_select(company_size) %>
+      <div class="col-md-4">
+        <%= f.label :size %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.file_field :logo, accept: 'image/jpg,image/jpeg,image/png' %>
+      <div class="col-md-4">
+        <%= f.label :logo %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :industries %>
+      <% @industries.each do |industry| %>
+      <div class="checkbox">
+        <%= check_box_tag 'industry_ids[]', industry.id -%>
+        <%= h industry.name -%>
+      </div>
+      <% end %>
+    </div>
+
+    <h3>Company Primary Location</h3>
+
+    <%= fields_for(@location) do |u| %>
+    <div class="form-group">
+      <%= u.text_field :street_address %>
+      <div class="col-md-4">
+        <%= u.label :street_address %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= u.text_field :street_address_2 %>
+      <div class="col-md-4">
+        <%= u.label :street_address_2 %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= u.text_field :phone %>
+      <div class="col-md-4">
+        <%= u.label :phone %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= u.text_field :primary_contact %>
+      <div class="col-md-4">
+        <%= u.label :primary_contact %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= u.text_field :city %>
+      <div class="col-md-4">
+        <%= u.label :city %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= select_tag :state, options_for_select(@location.state_options) %>
+      <div class="col-md-4">
+        <%= u.label :state %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= u.text_field :zip_code %>
+      <div class="col-md-4">
+        <%= u.label :zip_code %>
+      </div>
+    </div>
+
+    <% end %>
+
+
+    <%= f.submit %>
+
+    <% end %>
+    
+  </div>
+</div>

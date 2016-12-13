@@ -1,7 +1,20 @@
 <% companies.each do |company| %>
-  Company Name: <%= link_to company.name, company_path(company) %><br />
-  <%= company.street_address %><br />
-  <%= company.city_state_zip %><br />
-  <%= company.phone %><br />
-  <%= company.website %><br /><br />
+  <div class='card-holder col-md-4'>
+    <div class='card'>
+      <div class='logo'>
+        <%= image_tag company.logo.url %>
+      </div>
+      <div>
+        <h4 class="company_name">
+          <%= link_to company.name, company_path(company) %><br />
+        </h4>
+        <p>
+          <% company.location_info.each do |line| %>
+            <%= line %><br>
+          <% end %>
+          <%= link_to company.website, "http://#{company.website}" %>
+        </p>
+      </div>
+    </div>
+  </div>
 <% end %>

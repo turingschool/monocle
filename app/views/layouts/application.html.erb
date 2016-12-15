@@ -19,14 +19,15 @@
   <body>
 
     <%= render partial: "layouts/navbar" %>
+    <%= bootstrap_flash %>
 
-    <div class="container">
+    
 
     <%= render partial: "shared/flash" %>
 
       <%= yield %>
 
-    </div>
+    
 
   </body>
 </html>

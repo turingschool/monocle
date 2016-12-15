@@ -1,1 +1,95 @@
-<%= render partial: "shared/companies_index", locals: {companies: @companies} %>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <h2>Filters</h2>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <%= form_tag("/companies", method: "get") do %>
+                    <%= label_tag :size %>
+                    <% @company_sizes.each do |size| %>
+                    <li>
+                    <%= check_box_tag 'company_size[]', size[0] %>
+                    <%= h size[0] %>
+                  </li>
+                    <% end %>
+                    <div class="col-md-4">
+                      <%= submit_tag ("Submit") %>
+                      <% end %>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                  <%= form_tag("/companies", method: "get") do %>
+                  <%= label_tag :industry %>
+                    <% @industries.each do |industry| %>
+                        <li>
+                          <%= check_box_tag 'industry_ids[]', industry.name -%>
+                          <%= h industry.name -%>
+                        </li>
+                    <% end %>
+                    <div class="col-md-4">
+                      <%= submit_tag ("Submit Industries") %>
+                      <% end %>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Filters</a>
+                <div class="row">
+                    <div class="col-lg-12">
+                      <div id="map"></div>
+                       <script>
+                        function initMap() {
+                          var uluru = <%= @user_coordinates.html_safe %>;
+                          var bounds = new google.maps.LatLngBounds();
+                          var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 15,
+                            center: uluru
+                          });
+                          <% @companies.each do |company| %>
+                            var coordinates = <%= company.get_coordinates.html_safe %>;
+                            var marker = new google.maps.Marker({
+                              position: coordinates,
+                              map: map
+                            });
+                            bounds.extend(marker.getPosition());
+                          <% end %>
+                          map.setCenter(bounds.getCenter());
+                        }
+                      </script>
+                      <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_key'] %>&callback=initMap">
+                      </script>
+                        <%= render partial: "shared/companies_index", locals: {companies: @companies} %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    
+    <!-- jQuery -->
+   <script src="js/jquery.js"></script>
+
+   <!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+
+   <!-- Menu Toggle Script -->
+   <script>
+   $("#menu-toggle").click(function(e) {
+       e.preventDefault();
+       $("#wrapper").toggleClass("toggled");
+   });
+   </script>

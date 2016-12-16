@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
+RSpec.describe Industry, type: :model do
   it { should have_many(:companies) }
 end

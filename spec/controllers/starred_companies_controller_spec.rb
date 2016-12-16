@@ -7,7 +7,7 @@ RSpec.describe StarredCompaniesController, type: :controller do
       company = create(:company)
       stub_login(user)
 
-      params = {company: company.id}
+      params = {company_id: company.id}
 
       expect{post :create, params: params}.to change{user.companies.count}.from(0).to(1)
     end

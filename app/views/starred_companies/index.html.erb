@@ -1,10 +1,18 @@
-<% if @starred_companies && !@starred_companies.empty? %>
-<% @starred_companies.each do |company| %>
-  Company Name: <%= link_to company.name, company_path(company) %><br />
-  <%= company.street_address %><br />
-  <%= company.city_state_zip %><br />
-  <%= company.phone %><br />
-  <%= company.website %><br />
-  <%= link_to "Remove from starred companies", starred_company_path(company), method: :delete %><br /><br />
-<% end %>
-<% end %>
+<div class="container">
+  <div class="well">
+    <% if @starred_companies && !@starred_companies.empty? %>
+    <% @starred_companies.each do |company| %>
+    Company Name: <%= link_to company.name, company_path(company) %><br />
+    <%= link_to company.website, "http://#{company.website}", :target => "_blank"  %>
+<br />
+    <% company.locations.each do |location| %>
+    <%= location.street_address %><br />
+    <%= location.city_state_zip %><br />
+    <%= location.phone %><br />
+    <% end %>
+    <%= link_to "Remove from starred companies", starred_company_path(company), method: :delete, class: "btn btn-danger" %><br /><br />
+    <% end %>
+    <% end %>
+
+  </div>
+</div>

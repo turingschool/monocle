@@ -1,7 +1,0 @@
-<% companies.each do |company| %>
-  Company Name: <%= link_to company.name, company_path(company) %><br />
-  <%= company.street_address %><br />
-  <%= company.city_state_zip %><br />
-  <%= company.phone %><br />
-  <%= company.website %><br /><br />
-<% end %>

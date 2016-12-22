@@ -1,0 +1,33 @@
+<h2>Pending Companies</h2>
+<table class='table'>
+  <% @pending_companies.each do |company| %>
+      <tr>
+        <td>
+          <% company.location_info.each do |line| %>
+            <%= line %><br>
+          <% end %>
+        </td>
+        <td>
+          <%= button_to "Approve", {controller: "admin/companies", action: "update", company: {status: "approved"}, id: company.id}, method: :put %>
+          <%= button_to "Reject", {controller: "admin/companies", action: "update", id: company.id}, method: :put %>
+          <%= button_to "Edit", edit_admin_company_path(company) %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+<h2>Pending Locations</h2>
+<table class='table'>
+  <% @pending_locations.each do |location| %>
+      <tr>
+        <td>
+          <% location.full_location.each do |line| %>
+            <%= line %><br>
+          <% end %>
+        </td>
+        <td>
+          <%= button_to "Approve", {controller: "admin/locations", action: "update", location: {status: "approved"}, id: location.id}, method: :put %>
+          <%= button_to "Edit", edit_admin_location_path(location) %>
+        </td>
+      </tr>
+  <% end %>
+</table>

@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="well">
+    <%= form_for [@company, @location] do |f| %>
+    <div class="form-group">
+      <%= f.text_field :street_address %>
+      <div class="col-md-4">
+        <%= f.label :street_address %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :street_address_2 %>
+      <div class="col-md-4">
+        <%= f.label :street_address_2 %>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.text_field :city %>
+      <div class="col-md-4">
+        <%= f.label :city %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= select_tag :state, options_for_select(@location.state_options) %>
+      <div class="col-md-4">
+        <%= f.label :state %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :zip_code %>
+      <div class="col-md-4">
+        <%= f.label :zip_code %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :phone %>
+      <div class="col-md-4">
+        <%= f.label :phone %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :primary_contact %>
+      <div class="col-md-4">
+        <%= f.label :primary_contact %>
+      </div>
+    </div>
+    <%= f.submit "Submit New Location For #{@company.name}"%>
+    <% end %>
+    
+  </div>
+</div>

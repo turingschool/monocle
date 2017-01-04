@@ -1,10 +1,14 @@
-<% if @starred_companies && !@starred_companies.empty? %>
-<% @starred_companies.each do |company| %>
-  Company Name: <%= link_to company.name, company_path(company) %><br />
-  <%= company.street_address %><br />
-  <%= company.city_state_zip %><br />
-  <%= company.phone %><br />
-  <%= company.website %><br />
-  <%= link_to "Remove from starred companies", starred_company_path(company), method: :delete %><br /><br />
-<% end %>
-<% end %>
+<div class="container">
+  <div class="well">
+    <div class="container">
+      <% if @starred_companies && !@starred_companies.empty? %>
+      <% @starred_companies.each do |company| %>
+      <div class='card-holder col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2' data-id='<%= company.id%>'>
+        <%= render partial: 'shared/company_card', locals: { company:company } %>
+        <span class='btn btn-danger btn-remove'>Remove from starred companies</span>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

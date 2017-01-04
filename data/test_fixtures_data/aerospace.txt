@@ -1,5 +1,6 @@
 A&M AEROSPACE INC.
 2380 S. Delaware St.
+
 Denver, CO 80223
 303-871-9400
 www.amaerospace.com
@@ -7,9 +8,9 @@ Company headquarters: Denver
 Products/Services: Parts manufacturer for the defense aerospace industry.
 
 
-
 ABSL SPACE PRODUCTS INC./ENERSYS
-1751 S. Fordham St. Suite 100
+1751 S. Fordham St.
+Suite 100
 Longmont, CO 80503
 303-848-8081
 www.abslspaceproducts.com
@@ -17,9 +18,9 @@ Company headquarters: Redding, PA (EnerSys)
 Products/Services: Supplier of lithium-ion batteries for spacecraft and launch vehicles.
 Person in charge: Kevin Schrantz, director, space
 
-
 ACTION ENGINEERING
-12081 W. Alameda Parkway, Suite 455
+12081 W. Alameda Parkway,
+Suite 455
 Lakewood, CO 80228
 303-903-7744
 www.action-engineering.com
@@ -27,9 +28,9 @@ Company headquarters: Lakewood
 Products/Services: Consulting services to companies and individuals engaged in the aerospace and defense industries, requiring mechanical and systems engineering services for spacecraft and robots.
 
 
-
 ADAMWORKS
-7367 S. Revere Parkway, Building 2, Unit 2
+7367 S. Revere Parkway,
+Building 2, Unit 2
 Centennial, CO 80112
 303-200-6611
 www.adamworksinc.com
@@ -37,9 +38,9 @@ Company headquarters: Centennial
 Products/Services: AdamWorks designs and builds structures and systems for aerospace & defense industries; from lightweight structures to mechanical systems, manned or unmanned, air and ground.
 
 
-
 ADVANCED AEROTECHNOLOGIES GROUP LLC
 622 Ed Beegles Lane
+
 Greeley, CO 80631
 970-373-3295
 www.advancedaerotech.com
@@ -47,9 +48,9 @@ Company headquarters: Greeley
 Products/Services: Avionics sales, installation and repair.
 
 
-
 ADVANCED ALLOYS INC.
-600 S. Sunset St., Suite B
+600 S. Sunset St.,
+Suite B
 Longmont, CO 80501
 303-702-1997
 www.advancedalloys-inc.com
@@ -57,9 +58,9 @@ Company headquarters: Longmont
 Products/Services: Precision welding, fabrication, prototype and production for the aerospace industry.
 Person in charge: Stan Neighbors, owner
 
-
 ADVANCED MOBILE PROPULSION TEST
 1334 Airport Road
+
 Durango, CO 81303
 970-247-0840
 www.AMPT.pro
@@ -67,9 +68,9 @@ Company headquarters: Durango
 Products/Services: Provides hot fire test services for hypergolic liquid propellant space propulsion thrusters for reaction and attitude control systems. Offers test engineering services and test stand design.
 Person in charge: Christian Barnes, vice president, business development
 
-
 ADVANCED SOLUTIONS INC.
 7815 Shaffer Parkway
+
 Littleton, CO 80127
 303-979-2417
 www.go-asi.com
@@ -77,9 +78,9 @@ Company headquarters: Littleton
 Products/Services: Provides system analysis, design and implementation, flight software, and command and telemetry systems.
 Person in charge: Allen Bucher, CEO, owner
 
-
 ADVANCED TECHNOLOGY ASSOCIATES INC.
-6004 S. Kipling St., Suite 208
+6004 S. Kipling St.,
+Suite 208
 Littleton, CO 80127
 303-948-7980
 www.atacolorado.com
@@ -87,9 +88,9 @@ Company headquarters: Littleton
 Products/Services: Provides engineering and management services to the aerospace industry.
 
 
-
 ADVANCED THIN FILMS LLC
 5733 Central Ave.
+
 Boulder, CO 80301
 303-815-1545
 www.atf-ppc.com
@@ -97,9 +98,9 @@ Company headquarters: Boulder
 Products/Services: Precision optical components and ion beam sputtered coatings for applications in scientific research, defense, aerospace, telecommunications, laser and semiconductor manufacturing.
 Person in charge: Robert Beeson, general manager
 
-
 AERO SPECTRA INC.
 P.O. Box 3021
+
 Boulder, CO 80305
 303-499-2584
 www.aerospectra.com
@@ -107,9 +108,9 @@ Company headquarters: Boulder
 Products/Services: Electronics systems development, engineering design and analysis, and airborne remote and in situ sensing.
 Person in charge: James Hauser, President
 
-
 AEROFLEX RAD
 4350 Centennial Blvd.
+
 Colorado Springs, CO 80907
 719-594-8000
 www.aeroflex.com
@@ -117,9 +118,9 @@ Company headquarters: Colorado Springs
 Products/Services: Supplies integrated circuits and circuit card assemblies for the aerospace, commercial communication and industrial markets.
 
 
-
 AEROJET ROCKETDYNE INC.
 P.O. Box 13222
+
 Sacramento, CA 95813
 916-355-2610
 
@@ -127,9 +128,9 @@ Company headquarters: Rancho Cordova, CA
 Products/Services: Provides propulsion and energetics to space, missile defense, strategic, tactical missile and armaments customers.
 Person in charge: Scott Seymour, CEO GenCorp
 
-
 AEROSPACE TECHNOLOGIES INTERNATIONAL INC.
-2945 Center Green Court South, Suite C
+2945 Center Green Court South,
+Suite C
 Boulder, CO 80301-5412
 303-449-1003
 www.atintl.net
@@ -137,9 +138,9 @@ Company headquarters: Boulder
 Products/Services: Providers of aerospace components and services to the domestic and international aviation communities.
 Person in charge: Debbie Halevi, president
 
-
 AIR COMM CORP.
-1575 W. 124th Ave., Suite 210
+1575 W. 124th Ave.,
+Suite 210
 Westminster, CO 80234
 303-440-4075
 www.aircommcorp.com
@@ -147,9 +148,9 @@ Company headquarters: Westminster
 Products/Services: Climate-control systems for civil and military aircraft.
 Person in charge: Keith Steiner, CEO
 
-
 AIR MANAGEMENT TECHNOLOGY INC.
-12741 E. Caley Ave., Suite 140
+12741 E. Caley Ave.,
+Suite 140
 Centennial, CO 80111
 720-638-6285
 www.amt-aero.com
@@ -157,9 +158,9 @@ Company headquarters: Centennial
 Products/Services: Provides air-conditioning, heating and pressurization solutions for the light business jet and turboprop aircraft industry.
 
 
-
 AITECH DEFENSE SYSTEMS INC.
 3981 Stonegrass Point
+
 Broomfield, CO 80023
 303-466-7185
 www.rugged.com
@@ -167,9 +168,9 @@ Company headquarters: Chatsworth, CA
 Products/Services: Colorado regional office of Aitech Defense Systems — a provider of rugged commercial and military embedded computing solutions for the aerospace and defense industry.
 
 
-
 ALEUT GLOBAL SOLUTIONS
-5540 Tech Center Drive, Suite 100
+5540 Tech Center Drive,
+Suite 100
 Colorado Springs, CO 80919
 719-264-0620
 www.aleutmgt.com
@@ -177,9 +178,9 @@ Company headquarters: Colorado Springs
 Products/Services: Full-service small business with top-secret clearance that delivers civil engineering, satellite operations and logistics services to federal agencies, including DoD, DHS, NOAA and NASA.
 
 
-
 ALPHA MOLD WEST
 7005 W. 116th Ave.
+
 Broomfield, CO 80020-2998
 303-465-1701
 www.alphamoldwest.com
@@ -187,9 +188,9 @@ Company headquarters: Broomfield
 Products/Services: Makes plastic injection molds for the aerospace, appliance, automotive, computer, communications, electrical, food packaging and medical industries.
 Person in charge: Dane Whittington, president
 
-
 ALTAIR INDUSTRIES INC.
-217 Racquette Drive, Suite 5
+217 Racquette Drive,
+Suite 5
 Fort Collins, CO 80524
 970-217-1623
 www.altairindustriesinc.com
@@ -197,9 +198,9 @@ Company headquarters: Fort Collins
 Products/Services: Offers stand alone automation/processing equipment and tabletop workstations. Clients include medical, aerospace and high-tech manufacturing companies.
 
 
-
 ALTIUS SPACE MACHINES
-3001 Industrial Lane, Suite 5
+3001 Industrial Lane,
+Suite 5
 Broomfield, CO 80020
 303-827-1574
 www.altius-space.com
@@ -207,9 +208,9 @@ Company headquarters: Broomfield
 Products/Services: A space robotics technology company that is developing SmallSat Deployment Systems, ISS “Shirt Sleeve” Glovebox Robotics and various other technologies.
 Person in charge: Jonathan Goff, CEO, president
 
-
 ALVAREZ LLC
-9635 Maroon Circle , Suite 340
+9635 Maroon Circle ,
+Suite 340
 Englewood, CO 80112
 303-569-6353
 www.alvarezassociates.com
@@ -217,9 +218,9 @@ Company headquarters: Tysons Corner, VA
 Products/Services: Delivers IT solutions to federal and commercial clients.
 
 
-
 AMPEX DATA SYSTEMS CORP.
 4184 E. Bijou St.
+
 Colorado Springs, CO 80909
 719-596-2000
 www.ampexdata.com
@@ -227,9 +228,9 @@ Company headquarters: Redwood City, CA
 Products/Services: Supplier of high-capacity, high performance digital storage systems capable of functioning in demanding environments on land, at sea or in the air.
 
 
-
 ANALYTICAL GRAPHICS INC.
-7150 Campus Drive, Suite 260
+7150 Campus Drive,
+Suite 260
 Colorado Springs, CO 80920
 719-573-2600
 www.agi.com
@@ -237,9 +238,9 @@ Company headquarters: Exton, PA
 Products/Services: Provides geospatial analysis and visualization software for aerospace, defense, and intelligence applications.
 
 
-
 APPLIED DESIGN CORP.
-5311 Western Ave., Suite 131
+5311 Western Ave.,
+Suite 131
 Boulder, CO 80301
 303-444-3125
 www.applieddesigncorp.com
@@ -247,9 +248,9 @@ Company headquarters: Boulder
 Products/Services: Engineering, specialty FEA & CFD analysis, contract R&D, product development, technology management solutions and professional technical staffing.
 Person in charge: Michael Messaros, president/CEO
 
-
 ARES CORP.
-7921 Southpark Plaza, Suite 105
+7921 Southpark Plaza,
+Suite 105
 Littleton, CO 80120
 303-225-0540
 www.arescorporation.com
@@ -257,9 +258,9 @@ Company headquarters: Burlingame, CA
 Products/Services: Provides consulting services and solutions in engineering, risk management, reliability assurance, software and project management.
 
 
-
 ARES CORP.
-1330 Inverness Drive, Suite 230
+1330 Inverness Drive,
+Suite 230
 Colorado Springs, CO 80910
 719-484-8640
 www.arescorporation.com
@@ -267,9 +268,9 @@ Company headquarters: Burlingame, CA
 Products/Services: Provides consulting services and solutions in engineering, risk management, reliability assurance, software and project management.
 
 
-
 ASPEN ELECTRONICS MANUFACTURING INC.
-8975 Marshall Court, Suite 100
+8975 Marshall Court,
+Suite 100
 Westminster, CO 80031
 303-412-1216
 aemtronics.com
@@ -277,9 +278,9 @@ Company headquarters: Westminster
 Products/Services: Engineering contract manufacturing company, providing printed circuit board assembly services for computer, commercial, aerospace and medical device industries.
 
 
-
 AT&T GLOBAL BUSINESS — PUBLIC SECTOR SOLUTIONS
-985 Space Center Drive, Suite 310
+985 Space Center Drive,
+Suite 310
 Colorado Springs, CO 80915
 719-596-5395
 www.corp.att.com/gov
@@ -287,9 +288,9 @@ Company headquarters: Dallas, TX
 Products/Services: Provides computer integration and engineering research and development for space and defense industries.
 
 
-
 ATMOSPHERIC OBSERVING SYSTEMS INC.
-1930 Central Ave., Suite A
+1930 Central Ave.,
+Suite A
 Boulder, CO 80301
 303-443-3389
 www.aosinc.net
@@ -297,9 +298,9 @@ Company headquarters: Boulder
 Products/Services: Calibration/validation technology for the CO2 satellite.
 
 
-
 AVIATION INFORMATION SERVICES INC.
 6623 E. Phillips Ave.
+
 Centennial, CO 80112
 303-719-8793
 www.ais-software.com
@@ -307,9 +308,9 @@ Company headquarters: Centennial
 Products/Services: Developer of aviation management software for corporate, government and military flight departments.
 
 
-
 AVIOR CONTROL TECHNOLOGIES INC.
 2000 Pike Road
+
 Longmont, CO 80501
 720-491-3708
 www.AviorControls.com
@@ -317,9 +318,9 @@ Company headquarters: Longmont
 Products/Services: A full-service custom high-performance motor and motion control house, specifically servicing space, high vacuum and high reliability industries.
 Person in charge: Scott Starin, vice president
 
-
 AVSPEC AVIONICS SPECIALISTS LLC
 5297 Gulfstream Court
+
 Loveland , CO 80538
 970-203-0505
 www.avspec.aero
@@ -327,9 +328,9 @@ Company headquarters: Loveland
 Products/Services: Avionics sales, installation, service and training.
 
 
-
 BACH RESEARCH CORP.
 4946 N. 63rd St.
+
 Boulder, CO 80301
 303-444-3602
 www.bachresearch.com
@@ -337,9 +338,9 @@ Company headquarters: Boulder
 Products/Services: Custom precision optics and diffraction gratings for spaceflight, aerospace and university research applications.
 Person in charge: Erich Bach, president
 
-
 BAE SYSTEMS
-8610 Explorer Drive, Suite 115
+8610 Explorer Drive,
+Suite 115
 Colorado Springs, CO 80920
 719-637-1161
 www.baesystems.com
@@ -347,9 +348,9 @@ Company headquarters: Arlington, VA
 Products/Services: Provides software development, engineering and associated support functions for defense industry.
 Person in charge: Steven Kestner, CEO
 
-
 BALL AEROSPACE & TECHNOLOGIES CORP.
 1600 Commerce St.
+
 Boulder, CO 80301-2734
 303-939-6100
 www.ballaerospace.com
@@ -357,9 +358,9 @@ Company headquarters: Boulder
 Products/Services: Develops and manufactures spacecraft, advanced instruments and sensors, components, data exploitation systems and RF solutions for strategic, tactical and scientific applications.
 Person in charge: John A. Hayes, CEO, president
 
-
 BALL CORP.
 10 Longs Peak Drive
+
 Broomfield, CO 80021
 303-469-3131
 www.ball.com
@@ -367,9 +368,9 @@ Company headquarters: Broomfield
 Products/Services: Packaging; aerospace unit.
 Person in charge: John A. Hayes, CEO
 
-
 BARBER-NICHOLS INC.
 6325 W. 55th Ave.
+
 Arvada, CO 80002
 303-421-8111
 www.barber-nichols.com
@@ -377,9 +378,9 @@ Company headquarters: Arvada
 Products/Services: Produces high-performance turbo machinery for the commercial, defense and aerospace industries.
 Person in charge: Robert Barnaby, CEO
 
-
 BD SYSTEMS INC.
 360 Command View
+
 Colorado Springs, CO 80915
 719-474-8000
 www.bdsys.com
@@ -387,9 +388,9 @@ Company headquarters: Colorado Springs
 Products/Services: Provides aerospace engineering and information systems services.
 
 
-
 BIOSERVE SPACE TECHNOLOGIES
-429 UCB, ECAE 1B02
+429 UCB, 
+ECAE 1B02
 Boulder, CO 80309-0429
 303-735-5308
 www.colorado.edu/engineering/BioServe
@@ -397,9 +398,9 @@ Company headquarters: Boulder
 Products/Services: Develops products using space life sciences research; forms strategic partnerships with industry, academia and government.
 
 
-
 BITSOFT SYSTEMS INC.
 P.O. Box 270324
+
 Fort Collins, CO 80527
 303-775-1928
 www.bitsoftsystems.com
@@ -407,9 +408,9 @@ Company headquarters: Aurora, IL
 Products/Services: Develops avionics and flight-control systems and software.
 
 
-
 BLUE CANYON TECHNOLOGIES
-2425 55th St, Suite #200, Bldg. A
+2425 55th St,
+Suite #200, Bldg. A
 Boulder, CO 80301
 720-458-0703
 www.bluecanyontech.com
@@ -417,9 +418,9 @@ Company headquarters: Boulder
 Products/Services: Small spacecraft buses, systems, and components.
 Person in charge: George Stafford, CEO and president
 
-
 BLUE SUN ENTERPRISES INC.
-1942 Broadway, Suite 314
+1942 Broadway,
+Suite 314
 Boulder, CO 80302
 720-394-8897
 www.bluesunenterprises.com
@@ -427,9 +428,9 @@ Company headquarters: Boulder
 Products/Services: Develops and deploys a variety of flight software and ground software components for space missions.
 
 
-
 BOULDER INNOVATION GROUP INC.
 4824 Sterling Drive
+
 Boulder, CO 80301
 303-447-0248
 www.boulderinnovators.com
@@ -437,9 +438,9 @@ Company headquarters: Boulder
 Products/Services: Manufacture real-time, free-hand, 3-D digitizer of points in 3-D space for medical and industrial applications; involved in manufacturing of camera systems, scanners, trackers, fiber-optic systems.
 Person in charge: Ivan Faul, president
 
-
 CASCADE TEK
 1530 Vista View Drive
+
 Longmont, CO 80504
 720-340-7810
 www.cascadetek.com
@@ -447,9 +448,9 @@ Company headquarters: Hillsboro, Oregon
 Products/Services: Accredited product reliability testing lab. Performing tests such as vibration, drop shock, temperature/humidity, altitude, UV exposure, aging, blowing sand/dust, transportation simulation.
 Person in charge: Joe Fratiello, laboratory manager
 
-
 COLORADO PLATING LLC
-9616 Metro Airport Ave., Hangar 44
+9616 Metro Airport Ave., 
+Hangar 44
 Broomfield, CO 80021
 303-469-1749
 www.coloradoplating.com
@@ -457,9 +458,9 @@ Company headquarters: Broomfield
 Products/Services: Provides cadmium plating and embrittlement relief and powder coating and repair services.
 Person in charge: CJ Howard, President
 
-
 COMPOSITE TECHNOLOGY DEVELOPMENT INC.
-2600 Campus Drive, Suite D
+2600 Campus Drive,
+Suite D
 Lafayette, CO 80026-3359
 303-664-0394
 www.ctd-materials.com
@@ -467,19 +468,9 @@ Company headquarters: Lafayette
 Products/Services: Composite products for energy/aerospace/defense including electrical/thermal insulation, resins/adhesives, composite tanks, solar arrays and satellite components. Testing/engineering & design service.
 Person in charge: Naseem A. Munshi, president
 
-
-COMPUTRAK
-515 Kim Drive
-Fort Collins, CO 80525
-970-493-6886
-www.computrak.org
-
-
-
-
-
 CUSTOM MICROWAVE INC.
 24 Boston Court
+
 Longmont, CO 80501
 303-651-0707 ext. 19
 www.custommicrowave.com
@@ -487,9 +478,9 @@ Company headquarters: Longmont
 Products/Services: Precision design, manufacture, and test of high performance feeds for reflector antennas used on satellites. Precision fabrication of microwave components.
 Person in charge: Clency Lee-Yow, president
 
-
 DC’S MACHINING PRODUCTS INC.
 1121 Delaware St.
+
 Longmont, CO 80501
 303-772-1160
 
@@ -497,9 +488,9 @@ Company headquarters: Longmont
 Products/Services: Machine shop.
 
 
-
 DIGITALGLOBE INC.
-1601 Dry Creek Drive, Suite 260
+1601 Dry Creek Drive,
+Suite 260
 Longmont, CO 80503
 303-684-4000
 www.digitalglobe.com
@@ -507,9 +498,9 @@ Company headquarters: Westminster, CO
 Products/Services: Provides high-resolution satellite imagery.
 Person in charge: Jeffrey R. Tarr, CEO
 
-
 DIGITALGLOBE INC.
 1300 W. 120th Ave.
+
 Westminster, CO 80234
 303-684-4000
 www.digitalglobe.com
@@ -517,9 +508,9 @@ Company headquarters: Westminster, CO
 Products/Services: Provides high-resolution satellite imagery.
 Person in charge: Jeffrey R. Tarr, CEO
 
-
 DSOFT TECHNOLOGY CO.
-1155 Kelly Johnson Blvd., Suite 304
+1155 Kelly Johnson Blvd.,
+Suite 304
 Colorado Springs, CO 80920-3958
 719-598-7107
 www.dsoft-tech.com
@@ -527,9 +518,9 @@ Company headquarters: Colorado Springs
 Products/Services: .NET development, Umbraco, systems engineering, mobile systems.
 Person in charge: David Hollenbach, president/CEO
 
-
 DUKE SOURCE DBA THE NEW FIREWALL FORWARD
 5212 Cessna Drive
+
 Loveland, CO 80538
 970-669-6185
 www.thenewfirewallforward.com
@@ -537,9 +528,9 @@ Company headquarters: Chino, CA
 Products/Services: Aircraft piston engine overhaul, STCs, and upgrades. Airframe inspections and maintenance.
 Person in charge: Frank Szymanski, general manager
 
-
 ENSIGN POWER SYSTEMS INC.
 2175 Citrine Court
+
 Loveland, CO 80537
 970-203-9255
 www.ensignpower.com
@@ -547,9 +538,9 @@ Company headquarters: Loveland, CO
 Products/Services: Designer and manufacturer of electronic power supplies.
 Person in charge: R. Larry Choate, vicepresident
 
-
 EQUINOX INTERSCIENCE INC.
 352 Evergreen Way
+
 Nederland, CO 80466
 303-421-6441
 www.eisci.com
@@ -557,9 +548,9 @@ Company headquarters: Pinecliffe
 Products/Services: Designs and builds science instruments, including astronomical telescopes, electro-optical sensors and precision pointing and tracking platforms
 Person in charge: Russell R Mellon, President and Chief Engineer
 
-
 ESTESGROUP
-3780 E 15th St., Suite 101
+3780 E 15th St.,
+Suite 101
 Loveland, CO 80538
 888-300-2340
 www.estesgrp.com
@@ -567,9 +558,9 @@ Company headquarters: Estes Park
 Products/Services: IT services, including enterprise resource planning and cloud services.
 Person in charge: Bruce Grant, CEO
 
-
 FREEDOM AVIONICS CO.
 11905 Airport Way
+
 Broomfield , CO 80021
 303-469-5633
 www.freedomairavionics.com
@@ -577,9 +568,9 @@ www.freedomairavionics.com
 
 Person in charge: Bret Tredway, President Dane Duran, Vice-President heriS Tredway, Sec/Tres
 
-
 FRONTIER METAL STAMPING, INC.
 3764 Puritan Way
+
 Frederick, CO 80516
 303-458-5129
 www.frontiermetal.com
@@ -587,9 +578,9 @@ Company headquarters: Frederick
 Products/Services: Metal stamping, fabricating, blanking, bending, forming custom parts.
 Person in charge: Steven O’Donnell, president
 
-
 FRONTLINE AEROSPACE INC.
 14004 Quail Ridge Drive
+
 Broomfield, CO 80020
 720-887-8171
 www.frontlineaerospace.com
@@ -597,9 +588,9 @@ Company headquarters: Broomfield
 Products/Services: Gas turbine performance upgrades for the Rolls-Royce Model 250 and other gas turbines.
 Person in charge: Ryan Wood, CEO/CTO
 
-
 GOGO BUSINESS AVIATION
-105 Edgeview Court, Suite 300
+105 Edgeview Court,
+Suite 300
 Broomfield, CO 80021
 888-328-0200
 business.gogoair.com
@@ -607,9 +598,9 @@ Company headquarters: Itasca, IL
 Products/Services: In-flight communication and in-flight entertainment for business aircraft.
 Person in charge: Michael Small, CEO
 
-
 HONEYBEE ROBOTICS
 1860 Lefthand Circle, Unit C
+
 Longmont, CO 80501
 303-774-7613
 www.honeybeerobotics.com
@@ -617,9 +608,9 @@ Company headquarters: New York, NY
 Products/Services: Develops technology and products for next-generation advanced robotic and spacecraft systems that must operate in increasingly dynamic, unstructured and often hostile environments.
 
 
-
 HONEYWELL INTERNATIONAL INC.
-4700 Innovation Drive, Suite A
+4700 Innovation Drive,
+Suite A
 Fort Collins, CO 80525
 970-204-6121
 www.honeywell.com
@@ -627,9 +618,9 @@ Company headquarters: Morristown, NJ
 Products/Services: Honeywell is a diversified technology and manufacturing company that serves the aerospace industry. It also provides control technologies for buildings, homes and industry.
 
 
-
 HYTEK ELECTRONIC DESIGN
 3161 Meadowbrook Place
+
 Dacono, CO 80514
 303-548-1534
 www.hytek-ed.com
@@ -637,9 +628,9 @@ Company headquarters: Dacono
 Products/Services: Provides a wide range of electronic design services including Schematic Capture, PCB Layout, & Altera / Xilinx FPGA Design.
 Person in charge: Justin Kozlowitz, president
 
-
 INFINITY SYSTEMS ENGINEERING LLC
 13560 Northgate Estates Drive
+
 Colorado Springs, CO 80921
 719-548-9712
 www.infinity.aero
@@ -647,9 +638,9 @@ Company headquarters: Colorado Springs
 Products/Services: Provides advisory, engineering, intelligence and information technology services for the government sector. Works on various DoD space systems, including satellite operations and maintenance.
 
 
-
 INGENICOMM INC.
 3242 Glendevey Drive
+
 Loveland, CO 80538
 970-430-9712
 www.ingenicomm.net
@@ -657,9 +648,9 @@ Company headquarters: Chantilly, VA
 Products/Services: Provides key engineering development and field operations for satellite ground systems and telemetry products.
 
 
-
 INSTAR ENGINEERING & CONSULTING INC.
-6901 S. Pierce St., Suite 200
+6901 S. Pierce St.,
+Suite 200
 Littleton, CO 80128
 303-973-2316
 www.instarengineering.com
@@ -667,9 +658,9 @@ Company headquarters: Littleton
 Products/Services: Provides structural, mechanical and systems engineering, consulting and short courses in the aerospace industry.
 Person in charge: Thomas P. Sarafin, president, chief engineer
 
-
 INTEGRATED SPACEFLIGHT SERVICES LLC
-3360 Mitchell Lane, Suite C
+3360 Mitchell Lane,
+Suite C
 Boulder, CO 80301
 888-520-2050
 www.integratedspaceflight.com
@@ -677,9 +668,9 @@ Company headquarters: Boulder
 Products/Services: Provides system engineering and project management expertise for manned spaceflight. Specializes in contingency mission analyses and rescue and recovery tests and trade studies.
 
 
-
 INTELLIPROP INC.
-105 S. Sunset St., Suite N
+105 S. Sunset St.,
+Suite N
 Longmont, CO 80501
 303-774-0535
 www.intelliprop.com
@@ -687,9 +678,9 @@ Company headquarters: Longmont
 Products/Services: Provider of SATA, SAS and RAID-based IP cores, bridges, port multipliers. ASIC and FPGA customized designs. Provider of SSD chip.
 Person in charge: Ami Patel, general manager
 
-
 INTREX AEROSPACE
 12777 Claude Court
+
 Thornton, CO 80241
 303-665-1154
 www.intrexcorp.com
@@ -697,9 +688,9 @@ Company headquarters: Lansing, MI
 Products/Services: CNC machining, turning and milling for the aerospace industry.
 Person in charge: LaVonda Jeffrey, president
 
-
 JETTECH
-11757 W. Ken Caryl Ave., Suite F-503
+11757 W. Ken Caryl Ave.,
+Suite F-503
 Littleton, CO 80127
 303-697-4262
 www.jettechllc.net
@@ -707,19 +698,18 @@ Company headquarters: Littleton
 Products/Services: Instrumentation, sales and maintenance of aircraft systems.
 
 
-
 JETTECH — AVIONICS FACILITY
 10122 Airport Court
+
 Broomfield, CO 80021
 303-635-0055
 www.jettechllc.net
 Company headquarters: Littleton
 Products/Services: Instrumentation and maintenance of aircraft systems.
 
-
-
 KEVRON INC.
 3199 Billington Drive
+
 Erie, CO 80516
 720-226-0553
 www.kevron.com
@@ -730,6 +720,7 @@ Person in charge: Ron Quinlan, co-owner, Kevin Warman, co-owner, co-owners
 
 KRATOS TECHNOLOGY AND TRAINING SOLUTIONS
 985 Space Center Drive
+
 Colorado Springs, CO 80915
 719-550-3430
 www.kratosdefense.com
@@ -737,9 +728,9 @@ Company headquarters: Lanham, MD
 Products/Services: Provides ground systems to track and control satellites and to process and analyze the gathered information.
 
 
-
 LABORATORY FOR ATMOSPHERIC AND SPACE PHYSICS (LASP)
 1234 Innovation Drive
+
 Boulder, CO 80303-7814
 303-492-6412
 lasp.colorado.edu
@@ -747,9 +738,9 @@ Company headquarters: Boulder
 Products/Services: Planetary, atmospheric and space sciences research; engineering division designs and builds space flight hardware; mission operations division operates spacecrafts.
 Person in charge: Daniel Baker, director
 
-
 LARSON ENGINEERING
 1006 Lee Hill Drive
+
 Boulder, CO 80302
 303-449-9292
 
@@ -757,9 +748,9 @@ Company headquarters: Boulder
 Products/Services: Precision machine shop, prototype and production, mechanical engineering services, Pro Engineering-CREO CAD/CAM software.
 Person in charge: Rich Larson, owner
 
-
 LEFT HAND DESIGN CORP.
 2021 Miller Drive
+
 Longmont, CO 80501
 303-652-2786
 www.lefthand.com
@@ -767,9 +758,9 @@ Company headquarters: Longmont
 Products/Services: Precision positioning components: fine-steering mirrors, faststeering mirrors, active isolation systems, motion simulators, linear electro-magnetic actuators, pointing systems.
 Person in charge: Lawrence Germann, president
 
-
 LOCKHEED MARTIN INTEGRATED SYSTEMS & SOLUTIONS
 6304 Spine Road
+
 Boulder, CO 80301
 303-581-4200
 www.lockheedmartin.com
@@ -777,9 +768,9 @@ Company headquarters: Bethesda, Md.
 Products/Services: A systems integrator and information-technology company conducting business mainly with the U.S. Department of Defense and U.S. federal government agencies.
 Person in charge: Marillyn A. Hewson, CEO/president
 
-
 MANES MACHINE INC.
 2421 International Blvd.
+
 Fort Collins, CO 80524
 970-224-3311
 www.manesmachine.com
@@ -787,9 +778,9 @@ Company headquarters: Fort Collins
 Products/Services: Offers precision machined products for aerospace, automotive, semiconductor and oil industries.
 
 
-
 MEADOWLARK OPTICS INC.
 5964 Iris Parkway
+
 Frederick, CO 80530
 303-833-4333
 www.meadowlark.com
@@ -797,9 +788,9 @@ Company headquarters: Frederick
 Products/Services: Optical components/systems: spatial light modulators, waveplates, liquid crystal devices, tunable filters, polarizers, polarimeters, pockels cells, as well as custom fabrication & engineering.
 Person in charge: Garry Gorsuch
 
-
 MICROELECTRONICS RESEARCH DEVELOPMENT CORP.
-4775 Centennial Blvd., Suite 130
+4775 Centennial Blvd.,
+Suite 130
 Colorado Springs, CO 80919
 719-531-0805
 www.micro-rdc.com
@@ -807,9 +798,9 @@ Company headquarters: Colorado Springs
 Products/Services: Radiation Hardened by Design, low power and high performance microcontrollers, serial to parallel interface, scrubber and digital Application Specific Integrated Circuits and testing services.
 Person in charge: Joe Cuchiaro, president
 
-
 MILLER SPACE LLC
 10131 Coronado Circle
+
 Morrison, CO 80465
 303-437-4198
 www.miller-space.com
@@ -817,9 +808,9 @@ Company headquarters: Morrison
 Products/Services: Provides mechanical design-engineering services to the aerospace industry.
 Person in charge: Roger Miller, president
 
-
 MORGAN TECHNOLOGIES INC.
-8101 I-25 Frontage Road, Unit 4
+8101 I-25 Frontage Road, 
+Unit 4
 Erie, CO 80516
 303-651-1990
 
@@ -827,9 +818,9 @@ Company headquarters: Erie
 Products/Services: Manufacturer of aerospace parts. Medical, research companies.
 Person in charge: Bill Morgan, president
 
-
 NATIONAL TECHNICAL SYSTEMS INC.
 1736 Vista View Drive
+
 Longmont, CO 80504
 303-776-7249
 www.nts.com
@@ -837,9 +828,9 @@ Company headquarters: Longmont
 Products/Services: Certified full-compliance electro magnetic emissions and immunity testing. MIL-STD 461 testing.
 Person in charge: Patrick Conway , operations manager, Scott D. Dalgleish, CEO/president
 
-
 NEW VISTA RESEARCH INC.
 630 North St.
+
 Boulder, CO 80305
 720-288-0506
 www.newvistaresearch.com
@@ -847,9 +838,9 @@ Company headquarters: Boulder
 Products/Services: Research consulting, engineering consulting, computer modeling, information services; aerospace, mechanical, chemical, physics, bioengineering.
 Person in charge: Rom McGuffin, senior scientist
 
-
 PLANETIQ
-2425 55th St., Suite A-150
+2425 55th St.,
+Suite A-150
 Boulder, CO 80301
 571-364-7238
 www.planetiq.com
@@ -857,9 +848,9 @@ www.planetiq.com
 Products/Services: Commercial weather satellite constellations; numerical weather prediction data; weather forecasting products, services and analytics.
 
 
-
 NORTHROP GRUMMAN MISSION SYSTEMS INC.
 6120 Longbow Drive
+
 Boulder, CO 80301
 720-622-6008
 www.ngc.com
@@ -867,9 +858,9 @@ Company headquarters: Baltimore, MD
 Products/Services: Satellite ground stations supporting missile warning and missile defense.
 Person in charge: Ron Alford, director, overhead persistent IR exploitation systems
 
-
 PARADIGM RESEARCH OPTICS
 595 W. 66th St.
+
 Loveland, CO 80538
 970-776-8900
 www.research-optics.com
@@ -877,9 +868,9 @@ Company headquarters: Loveland
 Products/Services: Thin film coating, UV-MWIR, thin film design, lens design, lens fabrication, array of shapes, sizes and specifications. Optical assemblies and subassemblies, turn key optics, optical system I.
 Person in charge: Matt Morgan
 
-
 PARAVION TECHNOLOGY INC.
 2001 Airway Ave.
+
 Fort Collins, CO 80524
 970-224-3898
 www.paravion.com
@@ -887,9 +878,9 @@ Company headquarters: Fort Collins
 Products/Services: Designs and manufactures aircraft accessories for the general aviation marketplace.
 
 
-
 PETERSON MACHINING INC.
-6661 Arapahoe Road, Unit 6
+6661 Arapahoe Road, 
+Unit 6
 Boulder, CO 80303
 303-449-5755
 www.gotopmi.com
@@ -897,9 +888,9 @@ Company headquarters: Boulder
 Products/Services: Precision machine shop.
 Person in charge: Ronda Turner Peterson, CEO, owner
 
-
 PHASE IV ENGINEERING INC.
-2820 Wilderness Place, Unit C
+2820 Wilderness Place, 
+Unit C
 Boulder, CO 80301
 303-443-6611
 www.phaseivengr.com
@@ -907,9 +898,9 @@ Company headquarters: Boulder
 Products/Services: Develop, make, and sell wireless sensors: battery-free wireless RFID sensors, long-range battery-powered sensors, and wireless data loggers. Offer off-the shelf products and custom wireless sensors.
 
 
-
 PILATUS BUSINESS AIRCRAFT
 11755 Airport Way
+
 Broomfield, CO 80021
 303-438-5965
 www.pilatus-aircraft.com
@@ -917,9 +908,9 @@ Company headquarters: Broomfield
 Products/Services: Aircraft company.
 Person in charge: Thomas Bosshard
 
-
 PLEXUS
-285 Century Place, Suite 100
+285 Century Place,
+Suite 100
 Louisville, CO 80027
 303-926-9449
 www.plexus.com
@@ -927,9 +918,9 @@ Company headquarters: Neenah, Wis.
 Products/Services: Provides integrated product development manufacturing and sustaining services for Healthcare/Life Sciences, Industrial/Commercial, Networking/Communications & Defense/Security/Aerospace products.
 
 
-
 POUDRE AVIATION INC.
 621 Ed Beegles Lane
+
 Greeley, CO 80631
 970-378-8994
 www.poudreaviation.com
@@ -937,9 +928,9 @@ www.poudreaviation.com
 
 
 
-
 PRECISION MACHINED PRODUCTS LLC.
 1017 Smithfield Drive
+
 Fort Collins, CO 80524
 970-482-7676
 www.pmpmach.com
@@ -947,9 +938,9 @@ Company headquarters: Fort Collins
 Products/Services: Close-tolerance machined parts for aerospace, satellite, space, and defense.
 Person in charge: Andy Newcomb, president
 
-
 RAPIDPRO MANUFACTURING CORP.
 30 E. Ninth Ave.
+
 Longmont, CO 80504
 970-535-0550
 www.rapidpro.com
@@ -957,9 +948,9 @@ Company headquarters: Longmont
 Products/Services: Product design, prototype parts, cast urethane parts, metal coatings, tooling/injection molding and contract manufacturing.
 Person in charge: Ron Angstead
 
-
 REDSTONE AEROSPACE CORP.
-105 S. Sunset St., Unit T
+105 S. Sunset St., 
+Unit T
 Longmont, CO 80501
 303-684-8125
 www.redstoneaerospace.com
@@ -967,9 +958,9 @@ Company headquarters: Longmont
 Products/Services: Provides cryogenic systems, opto-mechanical systems, and precision mechanisms for the aerospace industry.
 Person in charge: Robert Levenduski, president
 
-
 RESEARCH ELECTRO-OPTICS INC.
 5505 Airport Blvd.
+
 Boulder, CO 80301
 303-938-1960
 www.reoinc.com
@@ -977,9 +968,9 @@ Company headquarters: Boulder
 Products/Services: Produces high-precision thin film coatings, optics and opto-mechanical assemblies for the ulatraviolet, visible and infrared.
 Person in charge: Paul Kelly
 
-
 ROCKY MOUNTAIN INSTRUMENT CO.
 106 Laser Drive
+
 Lafayette , CO 80026
 303-664-5000
 www.rmico.com
@@ -987,9 +978,9 @@ www.rmico.com
 
 
 
-
 SCION UAS LLC
 3693 E. County Road 30
+
 Fort Collins, CO 80528
 970-624-3560
 www.scionuas.com
@@ -997,9 +988,9 @@ Company headquarters: Fort Collins
 Products/Services: Vertical take-off and landing (VTOL) unmanned aerial systems.
 Person in charge: Mogensen Steen, CEO
 
-
 SEAKR ENGINEERING INC.
-500 Discovery Pkwy #200
+500 Discovery Pkwy 
+#200
 Superior, CO 80027
 303-662-1449
 www.seakr.com
@@ -1007,9 +998,9 @@ www.seakr.com
 
 
 
-
 SIERRA NEVADA CORP. SPACE SYSTEMS
 1722 Boxelder St.
+
 Louisville, CO 80027
 303-530-1925
 www.sncspace.com
@@ -1017,9 +1008,9 @@ Company headquarters: Sparks, NV
 Products/Services: Supplies space technologies & advanced spacecraft for civil, commercial & national security applications.
 
 
-
 SOLID POWER INC.
-500 S. Arthur Ave., Unit 300
+500 S. Arthur Ave., 
+Unit 300
 Louisville, CO 80027
 720-300-8167
 www.solidpowerbattery.com
@@ -1027,9 +1018,9 @@ Company headquarters: Louisville, CO
 Products/Services: A CU-Boulder spin-out business, Solid Power develops solid-state rechargeable batteries. Target markets include automotive, consumer electronics, aerospace and military.
 Person in charge: Douglas Campbell, president & CEO
 
-
 SPACENAV
-2727 Bryant St., Suite 540
+2727 Bryant St.,
+Suite 540
 Denver, CO 80211
 719.433.1692
 www.space-nav.com
@@ -1037,9 +1028,9 @@ www.space-nav.com
 Products/Services: Applied mathematics and aerospace engineering.
 
 
-
 SPECIAL AEROSPACE SERVICES LLC
 3005 30th St.
+
 Boulder, CO 80301
 303-625-1010
 www.specialaerospaceservices.com
@@ -1047,9 +1038,9 @@ www.specialaerospaceservices.com
 Products/Services: Engineering services for spaceflight safety, technical services, systems engineering and hardware development and precision manufacturing.
 
 
-
 SPORIAN MICROSYSTEMS INC.
-515 Courtney Way, Suite B
+515 Courtney Way,
+Suite B
 Lafayette, CO 80026
 303-516-9075
 www.sporian.com
@@ -1057,9 +1048,9 @@ Company headquarters: Lafayette
 Products/Services: Provides novel sensors, microelectromechanical systems (MEMS) design and packaging services.
 Person in charge: Michael Usrey, vice president
 
-
 ST. VRAIN MANUFACTURING INC.
 819 S. Lincoln St.
+
 Longmont, CO 80501
 303-702-1529
 www.stvrainmfg.com
@@ -1067,9 +1058,9 @@ Company headquarters: Longmont
 Products/Services: Precision machining for aerospace, medical and high-tech industries. 3, 4 and 5-Axis CNC Milling, CNC turning, wire EDM. Quality system based on AS-9100 Zeiss/B&S CMMs ITAR Registered.
 Person in charge: Bob Bergstrom, president
 
-
 STEMGIRLS LLC
 509 London Ave.
+
 Lafayette, CO 80026
 303-817-6369
 
@@ -1077,9 +1068,9 @@ Company headquarters: Lafayette
 Products/Services: Hands-on STEM workshops for girls ages 7-12. Lead exclusively by female role models. STEMgirls is offered once a month at the Louisville Recreation Center.
 Person in charge: Karen Alfino, Founder/CEO
 
-
 STRATOM INC.
-5375 Western Ave., Suite A
+5375 Western Ave.,
+Suite A
 Boulder, CO 80301
 720-565-9609
 www.stratom.com
@@ -1087,9 +1078,9 @@ Company headquarters: Boulder
 Products/Services: Strategic solutions, advanced technologies and services to government, commercial and global clients. Specializing in C-IED, robotics, unmanned vehicles, sensor integration and engineering.
 Person in charge: Mark Gordon, president/CEO
 
-
 STRIKEWIRE TECHNOLOGIES
-149 S. Briggs St., Suite 102A
+149 S. Briggs St.,
+Suite 102A
 Erie, CO 80516-4065
 
 www.strikewire.com
@@ -1097,9 +1088,9 @@ Company headquarters: Erie, CO
 Products/Services: Product-lifescycle management services for the aerospace, medical-device, automotive, electronics and other sectors.
 
 
-
 TECHNOLOGY APPLICATIONS INC.
-5710 Flatiron Parkway, Unit A
+5710 Flatiron Parkway, 
+Unit A
 Boulder, CO 80301
 303-867-8145
 www.techapps.com
@@ -1107,9 +1098,9 @@ Company headquarters: Boulder
 Products/Services: Cryogenic and thermal management systems research and development for aerospace and commercial applications. Primary focus on thermal straps for satellites and microsphere cryogenic insulation.
 
 
-
 TEMPERATURE PROCESSING CO. INC.
 10477 Weld County Road 7
+
 Longmont, CO 80504
 303-772-0250
 www.tpcolorado.com
@@ -1117,9 +1108,9 @@ Company headquarters: Longmont
 Products/Services: Certified aerospace, medical, nuclear, mil-spec and custom heat treating.
 Person in charge: Eric Engelhard, Steward
 
-
 THE AEROSPACE CORP.
 7250 Getting Heights
+
 Colorado Springs, CO 80916
 719-375-6000
 www.aero.org
@@ -1127,9 +1118,9 @@ Company headquarters: El Segundo, CA
 Products/Services: Federally funded research and development center; advises the DoD on all aspects of satellite acquisition, launch and operation.
 
 
-
 TWIN OAKS COMPUTING
-755 Maleta Lane, Suite 203
+755 Maleta Lane,
+Suite 203
 Castle Rock, CO 80108
 720-733-7906
 
@@ -1137,9 +1128,9 @@ Company headquarters: Castle Rock
 Products/Services: Developer of CoreDX DDS, a Publish-Subscribe middleware available for small-footprint and embedded systems.
 Person in charge: Clark Tucker
 
-
 U.S. AIR FORCE ACADEMY RESEARCH CENTERS AND INSTITUTES (USAFA)
-2354 Fairchild Drive, Suite 4K25
+2354 Fairchild Drive,
+Suite 4K25
 USAF Academy, CO 80840-6200
 719-333-7731
 www.usafa.af.mil
@@ -1147,9 +1138,9 @@ Company headquarters: Colorado Springs
 Products/Services: The Academy’s research mission is to plan and execute research programs in Air Force-relevant technology. This includes basic and applied research in aeronautics, biomimetic sensors, nanosatellites.
 Person in charge: Robert Kraus, chief scientist
 
-
 UASUSA
 East Hangar, 229 Airport Road
+
 Longmont, CO 80503
 720-608-1827
 www.uasusa.com
@@ -1157,9 +1148,9 @@ Company headquarters: Longmont
 Products/Services: Develops and sells small civilian unmanned aerial systems (UAS) that help governments, businesses and nongovernmental organizations resolve some of society’s biggest challenges.
 
 
-
 VIASAT INC.
 349 Inverness Drive South
+
 Englewood, CO 80112
 888-746-8960
 www.viasat.com
@@ -1167,9 +1158,9 @@ Company headquarters: Englewood
 Products/Services: Produces satellite and other digital communication products.
 
 
-
 WOODWARD INC.
 1081 Woodward Way
+
 Fort Collins, CO 80524
 970-482-5811
 www.woodward.com
@@ -1177,9 +1168,9 @@ Company headquarters: Fort Collins
 Products/Services: Components and systems that enable energy control, efficient operations and lower emissions in large industrial engines.
 Person in charge: Thomas A. Gendron, CEO
 
-
 WOODWARD INC.
 1000 E. Drake Road
+
 Fort Collins, CO 80525-1824
 970-482-5811
 www.woodward.com
@@ -1187,9 +1178,9 @@ Company headquarters: Fort Collins
 Products/Services: Components and systems that enable energy control, efficient operations and lower emissions in large industrial engines.
 Person in charge: Thomas A. Gendron, CEO/chairman
 
-
 WOODWARD INC.
 3800 Wilson Ave.
+
 Loveland, CO 80538
 970-482-5811
 www.woodward.com

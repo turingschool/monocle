@@ -1,0 +1,35 @@
+<script type='text/javascript'>
+function initMap() {
+  var uluru = <%= @user_coordinates.html_safe %>;
+  var bounds = new google.maps.LatLngBounds();
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: uluru
+  });
+  <% @companies.each_with_index do |company, index| %>
+    var coordinates = <%= company.get_coordinates.html_safe %>;
+    var infowindow<%= index %> = new google.maps.InfoWindow({
+      content: "<%= company.name %>"
+    });
+    var marker<%= index %> = new google.maps.Marker({
+      position: coordinates,
+      map: map,
+      url: "<%= company_path(company) %>"
+    });
+    marker<%= index %>.addListener('mouseover', function() {
+      infowindow<%= index %>.open(map, marker<%= index %>);
+    }) ;
+    marker<%= index %>.addListener('mouseout', function() {
+      infowindow<%= index %>.close();
+    }) ;
+    marker<%= index %>.addListener('click', function() {
+      window.location.href = this.url;
+    }) ;
+    bounds.extend(marker<%= index %>.getPosition());
+  <% end %>
+  map.setCenter(bounds.getCenter());
+  map.fitBounds(bounds);
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_key'] %>&callback=initMap">
+</script>

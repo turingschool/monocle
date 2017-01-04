@@ -1,52 +1,33 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it { should validate_presence_of(:username) }
-  it { should validate_presence_of(:slack_uid) }
-  it { should validate_presence_of(:slack_access_token) }
-  it { should validate_uniqueness_of(:slack_uid) }
   it { should have_many(:starred_companies) }
   it { should have_many(:companies) }
 
-  context "When given valid slack user info" do
+  context "When given valid census user info" do
     it "creates a new user" do
-      user_info = {"ok"=>true,
-                   "access_token"=>"xoxp-xxxxxxxxxx",
-                   "user"=>{"name"=>"Calaway",
-                            "id"=>"U19B6D05R"}}
+      user_info = OpenStruct.new({"uid"=>"abc123",
+                   "credentials"=>{"token"=>"xoxp-xxxxxxxxxx"},
+                   "info"=>{"first_name"=>"Cal",
+                            "last_name"=>"Away"}})
 
-      new_user = User.create_from_slack(user_info)
+      new_user = User.create_from_census(user_info)
 
       expect(new_user).to be_an_instance_of(User)
       expect(new_user).to eq(User.last)
-      expect(new_user.username).to eq("Calaway")
-      expect(new_user.slack_uid).to eq("U19B6D05R")
-      expect(new_user.slack_access_token).to eq("xoxp-xxxxxxxxxx")
+      expect(new_user.username).to eq("Cal Away")
+      expect(new_user.census_uid).to eq("abc123")
+      expect(new_user.census_access_token).to eq("xoxp-xxxxxxxxxx")
     end
   end
 
-  context "When given invalid slack user info" do
+  context "When given invalid census user info" do
     it "returns false and does not create a new user" do
-      user_info = {"ok"=>true,
-                   "access_token"=>"xoxp-xxxxxxxxxx",
-                   "user"=>{"name"=>nil,
-                            "id"=>"U19B6D05R"}}
+      user_info = OpenStruct.new({"census_uid"=>"abc123",
+                   "credentials"=>{"token"=>"xoxp-xxxxxxxxxx"},
+                   "info"=>{"last_name"=>"Away"}})
 
-      result = User.create_from_slack(user_info)
-
-      expect(result).to eq(false)
-      expect(User.count).to eq(0)
-    end
-  end
-
-  context "When slack authentication is false" do
-    it "returns false and does not create a new user" do
-      user_info = {"ok"=>false,
-                   "access_token"=>"xoxp-xxxxxxxxxx",
-                   "user"=>{"name"=>"Calaway",
-                            "id"=>"U19B6D05R"}}
-
-      result = User.create_from_slack(user_info)
+      result = User.create_from_census(user_info)
 
       expect(result).to eq(false)
       expect(User.count).to eq(0)

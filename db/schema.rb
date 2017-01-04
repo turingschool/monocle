@@ -10,17 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108235922) do
+ActiveRecord::Schema.define(version: 20161213204411) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "citext"
-
-  create_table "categories", force: :cascade do |t|
-    t.citext   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "cities", force: :cascade do |t|
     t.citext   "name"
@@ -29,24 +23,54 @@ ActiveRecord::Schema.define(version: 20161108235922) do
   end
 
   create_table "companies", force: :cascade do |t|
-    t.integer  "category_id"
     t.citext   "name"
-    t.citext   "street_address"
-    t.citext   "city_state_zip"
     t.citext   "website"
     t.citext   "headquarters"
     t.citext   "products_services"
-    t.citext   "person_in_charge"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.citext   "phone"
-    t.integer  "city_id"
-    t.integer  "state_id"
-    t.integer  "zip_code_id"
-    t.index ["category_id"], name: "index_companies_on_category_id", using: :btree
-    t.index ["city_id"], name: "index_companies_on_city_id", using: :btree
-    t.index ["state_id"], name: "index_companies_on_state_id", using: :btree
-    t.index ["zip_code_id"], name: "index_companies_on_zip_code_id", using: :btree
+    t.integer  "status"
+    t.citext   "size"
+    t.string   "logo"
+  end
+
+  create_table "company_industries", force: :cascade do |t|
+    t.integer "company_id"
+    t.integer "industry_id"
+    t.index ["company_id"], name: "index_company_industries_on_company_id", using: :btree
+    t.index ["industry_id"], name: "index_company_industries_on_industry_id", using: :btree
+  end
+
+  create_table "industries", force: :cascade do |t|
+    t.citext   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string  "street_address"
+    t.string  "street_address_2"
+    t.string  "phone"
+    t.string  "primary_contact"
+    t.integer "status"
+    t.integer "company_id"
+    t.string  "zip_code"
+    t.citext  "city"
+    t.string  "state"
+    t.float   "latitude"
+    t.float   "longitude"
+    t.index ["company_id"], name: "index_locations_on_company_id", using: :btree
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.string   "title"
+    t.string   "body"
+    t.integer  "user_id"
+    t.integer  "company_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_notes_on_company_id", using: :btree
+    t.index ["user_id"], name: "index_notes_on_user_id", using: :btree
   end
 
   create_table "starred_companies", id: false, force: :cascade do |t|
@@ -66,8 +90,11 @@ ActiveRecord::Schema.define(version: 20161108235922) do
     t.string   "username"
     t.string   "slack_uid"
     t.text     "slack_access_token"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "role"
+    t.string   "census_uid"
+    t.string   "census_access_token"
   end
 
   create_table "zip_codes", force: :cascade do |t|
@@ -76,8 +103,9 @@ ActiveRecord::Schema.define(version: 20161108235922) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "companies", "categories"
-  add_foreign_key "companies", "cities"
-  add_foreign_key "companies", "states"
-  add_foreign_key "companies", "zip_codes"
+  add_foreign_key "company_industries", "companies"
+  add_foreign_key "company_industries", "industries"
+  add_foreign_key "locations", "companies"
+  add_foreign_key "notes", "companies"
+  add_foreign_key "notes", "users"
 end

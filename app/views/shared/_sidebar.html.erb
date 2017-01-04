@@ -1,0 +1,29 @@
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand">
+        <h2>Filters</h2>
+    </li>
+    <div class="form-group" id='size-options'>
+      <li>
+        <%= label_tag :size %>
+      </li>
+      <% @company_sizes.each do |size| %>
+        <li>
+          <%= check_box_tag 'company_size[]', size[0] %>
+          <%= h size[0] %>
+        </li>
+      <% end %>
+    </div>
+    <div class="form-group" id='industry-options'>
+      <li>
+        <%= label_tag :industry %>
+      </li>
+      <% @industries.each do |industry| %>
+        <li>
+          <%= check_box_tag 'industry_ids[]', industry.name -%>
+          <%= h industry.name -%>
+        </li>
+      <% end %>
+    </div>
+  </ul>
+</div>

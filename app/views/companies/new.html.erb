@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="well">
+    <h2>Company Information</h2>
+    <table class="table">
+    <%= form_for(@company) do |f| %>
+    <tr>
+      <td><%= f.label :name   %></td>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :website %></td>
+      <td><%= f.text_field :website %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :headquarters %></td>
+      <td><%= f.text_field :headquarters %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :products_services %></td>
+      <td><%= f.text_field :products_services %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :size %></td>
+      <td><%= select_tag :size, options_for_select(company_size) %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :logo %></td>
+      <td><%= f.file_field :logo, accept: 'image/jpg,image/jpeg,image/png' %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :industries %></td>
+
+      <td><% @industries.each do |industry| %>
+        <%= check_box_tag 'industry_ids[]', industry.id -%>
+        <%= h industry.name -%><br />
+        <% end %>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td colspan="2"><h3>Company Primary Location</h3></td>
+    </tr>
+
+
+      <%= fields_for(@location) do |u| %>
+      <tr>
+        <td><%= u.label :street_address %></td>
+        <td><%= u.text_field :street_address %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :street_address_2 %></td>
+        <td><%= u.text_field :street_address_2 %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :phone %></td>
+        <td><%= u.text_field :phone %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :primary_contact %></td>
+        <td><%= u.text_field :primary_contact %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :city %></td>
+        <td><%= u.text_field :city %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :state %></td>
+        <td><%= select_tag :state, options_for_select(@location.state_options) %></td>
+      </tr>
+      <tr>
+        <td><%= u.label :zip_code %></td>
+        <td><%= u.text_field :zip_code %></td>
+      </tr>
+
+      <% end %>
+      <tr>
+        <td colspan="2"><%= f.submit %></td>
+      </tr>
+
+    </table>
+    <% end %>
+
+  </div>
+</div>

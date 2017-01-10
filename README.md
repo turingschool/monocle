@@ -6,12 +6,18 @@ Monocle has 2 Heroku sites for you to use:
 * [Staging](https://turingmonocle-staging.herokuapp.com)
 * [Production](https://turingmonocle-production.herokuapp.com)
 
+## Behind the Scenes
+
+* Ruby version: 2.3.0
+* Database: Postgresql
+* Rails version: 5.0
+
 ## Setting up the Development Environment
 
  1. Fork this Repo
  2. Run `bundle install`
  3. You will need API Keys for Census, Google Maps, and AWS.
- 4. install Figaro to access the application.yml file and place your keys in with this syntax to ensure matching variables:
+ 4. Install Figaro to access the application.yml file and place your keys in with this syntax to ensure matching variables:
 
  ```
  S3_KEY: "enter_key"
@@ -28,3 +34,6 @@ Monocle has 2 Heroku sites for you to use:
  5. run `rake db:create`
  6. run `rake db:migrate`
  7. run `rake db:seed`
+
+
+ The project uses RSPEC for testing; run `rspec` in the terminal to run the test suite.

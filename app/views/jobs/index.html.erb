@@ -1,0 +1,21 @@
+<div class='well container'>
+  <% @jobs.each do |job| %>
+    <div class='job'>
+      <table class='table'>
+        <tr>
+          <td><%= link_to job.title, job_path(job.uid) %></td>
+        </tr><tr>
+          <td>Company: <%= job.company_name %></td>
+        </tr><tr>
+          <td>Remote: <%= job.remote %></td>
+        </tr><tr>
+          <td>Posted Date: <%= job.posted_date %></td>
+        </tr><tr>
+          <td>Location: <%= job.location %></td>
+        </tr><tr>
+          <td>Technologies: <%= job.technologies %></td>
+        </tr>
+      </table>
+    </div>
+  <% end %>
+</div>

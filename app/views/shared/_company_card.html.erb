@@ -1,0 +1,16 @@
+<div class='card'>
+  <div class='logo'>
+    <%= link_to (image_tag company.logo.url), company_path(company) %>
+  </div>
+  <div>
+    <h4 class="company_name">
+      <%= link_to company.name, company_path(company) %><br />
+    </h4>
+    <p>
+      <% company.location_info.each do |line| %>
+        <%= line %><br>
+      <% end %>
+      <%= link_to company.website, "http://#{company.website}", :target => "_blank"  %>
+    </p>
+  </div>
+</div>

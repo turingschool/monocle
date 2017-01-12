@@ -81,6 +81,10 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.react.server_renderer_options = {
+    files: ["server_rendering.js"], # files to load for prerendering
+  }
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end

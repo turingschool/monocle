@@ -4,8 +4,9 @@
     <title>Monocle</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all'  %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_key'] %>&callback=initMap"></script>
+    <%= javascript_include_tag 'application' %>
 
     <!-- From: https://getbootstrap.com/getting-started/#download -->
     <!-- Latest compiled and minified CSS -->
@@ -19,14 +20,15 @@
   <body>
 
     <%= render partial: "layouts/navbar" %>
+    <%= bootstrap_flash %>
 
-    <div class="container">
+
 
     <%= render partial: "shared/flash" %>
 
       <%= yield %>
 
-    </div>
+
 
   </body>
 </html>

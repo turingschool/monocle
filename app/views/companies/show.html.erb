@@ -1,37 +1,118 @@
-<h1><%= @company.name %></h1>
-<table class="table-condensed table-hover">
-  <tr>
-    <th>Address:</th>
-    <td><%= @company.street_address %><br /><%= @company.city_state_zip %></td>
-  </tr>
-  <tr>
-    <th>Phone:</th>
-    <td><%= @company.phone %></td>
-  </tr>
-  <tr>
-    <th>Website:</th>
-    <td><%= @company.website %></td>
-  </tr>
-  <tr>
-    <th>Headquarters:</th>
-    <td><%= @company.headquarters %></td>
-  </tr>
-  <tr>
-    <th>Products/Services:</th>
-    <td><%= @company.products_services %></td>
-  </tr>
-  <tr>
-    <th>Person in Charge:</th>
-    <td><%= @company.person_in_charge %></td>
-  </tr>
-</table>
+<div class="container">
+  <div class="well">
+    <h1 class="company-name"><%= @company.name %></h1>
+    <div class="container">
+      <div class="col-md-3">
+        <br>
+        <div class='big-logo'>
+          <%= image_tag @company.logo.url %>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h3>Company Information</h3>
+        <table class="table-condensed table-hover">
+          <tr>
+            <th>Products/Services:</th>
+            <td><%= @company.products_services %></td>
+          </tr>
+          <tr>
+            <th>Website:</th>
+            <td><%= link_to @company.website, "http://#{@company.website}", :target => "_blank" %></td>
+          </tr>
+          <tr>
+            <th>Headquarters:</th>
+            <td><%= @company.headquarters %></td>
+          </tr>
+          <tr>
+            <th>Number of Employees:</th>
+            <td><%= @company.size %></td>
+          </tr>
+          <tr>
+            <th>Industries:</th>
+            <td><% @company.industries.map do |industry| %>
+              <ul>
+                <li>
+                  <%= industry.name %>
+                </li>
+              </ul>
+              <% end %>
+            </td>
+          </tr>
 
-<% if current_user.companies.exists?(@company.id) %>
-  <h4><i class="text-info">
-    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> This company has been saved in your starred list.
-  </i></h4>
-<% else %>
-  <%= button_tag class: "btn btn-default btn-lg", id: "star", data: {id: @company.id} do %>
-    <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Star
-  <% end %>
-<% end %>
+        </table>
+      </div>
+    </div>
+
+    <% if current_user.admin? %>
+    <%= link_to 'Edit Company Information', edit_admin_company_path(@company), class: "btn btn-default" %>
+    <% end %>
+    <%= link_to 'Add Location', new_company_location_path(@company), class: "btn btn-default" %>
+
+    <br />
+    <br />
+
+    <h3><%= pluralize(@company.approved_locations.count, 'Location') %></h3>
+
+
+    <% @company.approved_locations.each do |location | %>
+    <table class="table-condensed table-hover" id='locations'>
+      <tr>
+        <td>Address:</td>
+        <td><%= location.street_address %> <br />
+          <%= location.street_address_2 %></td>
+        </tr>
+        <tr>
+          <td>City, State Zip:</td>
+          <td><%= location.city_state_zip %></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><%= location.phone %></td>
+        </tr>
+        <tr>
+          <td>Primary Contact:</td>
+          <td><%= location.primary_contact %></td>
+        </tr>
+        <tr>
+          <td><% if current_user.admin? %>
+            <%= link_to 'Edit Location', edit_admin_location_path(company_id: @company.id, id: location.id), class:"btn btn-default" %>
+            <%= link_to 'Delete Location', admin_location_path(company_id: @company.id, id: location.id), method: :delete, data: {confirm: "Are you sure you want to delete this location?"}, class:"btn btn-danger"  %>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+      <% end %>
+
+    <% if current_user.companies.exists?(@company.id) %>
+      <div class='starred-message'>
+        <h4><i class="text-info">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> This company has been saved in your starred list.
+        </i></h4>
+      </div>
+      <%= button_tag class: "btn btn-default btn-lg unstar star-toggle", data: {no_turbolink: true, id: @company.id} do %>
+      <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Unstar
+      <% end %>
+    <% else %>
+      <div class='starred-message'></div>
+      <%= button_tag class: "btn btn-default btn-lg star star-toggle", data: {no_turbolink: true, id: @company.id} do %>
+      <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Star
+      <% end %>
+    <% end %>
+
+    <h3>Public Notes</h3>
+    <div id='notes' class='panel-group'>
+    </div>
+
+    <div class='panel panel-default'>
+      <div class='panel-body'>
+
+        <input type="text" name="note[title]" id="create-note-title" placeholder="Title"></br></br>
+        <textarea name="note[body]" id="create-note-body" placeholder="Body ..."></textarea></br>
+        <button type="button" name="create-note" id="create-note-button" data-username='<%= current_user.username %>' data-user-id='<%= current_user.id %>' data-company-id='<%= @company.id %>'>Create</button>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>

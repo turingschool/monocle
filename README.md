@@ -1,6 +1,6 @@
 # [Monocle](https://turingmonocle-production.herokuapp.com)
 
-[Monocle](https://turingmonocle-production.herokuapp.com) is company and job seeking tool for the Turing School community. It's purpose is to provide access to a large directory of technical companies that can be navigated in a simple and intuitive way. Once signed in, users will have the option to star companies and listings they are interested in to review at a later time. It can be accessed with a TuringSchool Census account, which you will be prompted to create from Monocle.
+[Monocle](https://turingmonocle-production.herokuapp.com) is company and job seeking tool for the Turing School community. It's purpose is to provide access to a large directory of technical companies that can be navigated in a simple and intuitive way. Once signed in, users will have the option to star companies and listings they are interested in to review at a later time. It can be accessed with a TuringSchool Census account, which you will be prompted to create from Monocle..
 
 Monocle has 2 Heroku sites for you to use:
 * [Staging](https://turingmonocle-staging.herokuapp.com)

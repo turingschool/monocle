@@ -43,6 +43,9 @@
       </div>
     </div>
 
+    <div id="company-map">
+
+    </div>
     <% if current_user.admin? %>
     <%= link_to 'Edit Company Information', edit_admin_company_path(@company), class: "btn btn-default" %>
     <% end %>
@@ -115,4 +118,22 @@
   </div>
 
   </div>
+
+  <script type="text/javascript">
+    function initMap() {
+
+      var myLatLng = {lat: <%= @company.locations.first.latitude %> , lng: <%= @company.locations.first.longitude %>};
+
+      var map = new google.maps.Map(document.getElementById('company-map'), {
+        zoom: 12,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+  </script>
 </div>

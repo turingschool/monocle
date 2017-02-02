@@ -14,7 +14,6 @@ body {
   padding-top: 70px;
 }
 
-
  .logo img {
    position: absolute;
    top: 0;
@@ -86,7 +85,14 @@ body {
   border-radius: 2px;
 }
 
-
+#company-map {
+  margin-top: 80px;
+  margin-right: 20px;
+  border: 1.5px solid;
+  height: 330px;
+  width: 730px;
+  float: right;
+}
 
 .edit-box {
   background-color: #d2d2d2 !important;

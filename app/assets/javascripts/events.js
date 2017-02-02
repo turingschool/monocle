@@ -113,7 +113,7 @@ function prepareJobUnstar() {
     method: "DELETE"
   })
   .done(function(){
-   $(".unstar-job").off(); 
+   $(".unstar-job").off();
   })
   .then(function(){
     renderJobStar();

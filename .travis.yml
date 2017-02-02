@@ -8,7 +8,10 @@ services:
 before_script:
   - psql -c 'create database monocle_test;' -U postgres
 
-script: bundle exec rspec
+script:
+  - bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec
 
 # safelist
 branches:

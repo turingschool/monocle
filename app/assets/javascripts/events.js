@@ -10,10 +10,7 @@ $(document).ready( function(){
   });
   $(".btn-remove").on("click", removeCompany);
   $(".btn-remove-job").on("click", removeJob);
-  $("div#industry-options :checkbox").change(filterCompanies);
-  $("div#size-options :checkbox").change(toggleSizeSelect);
-  $("#size-options").on('change', 'select#sizes', filterCompanies);
-
+  $(":checkbox").change(filterCompanies);
   $.when()
   .then(initMap)
   .then(
@@ -91,7 +88,6 @@ function removeJob() {
     success: function(){ job.remove() }
   })
 }
-
 function prepareJobStar() {
   var jobId = $(this).data('id');
   $.ajax({
@@ -117,7 +113,7 @@ function prepareJobUnstar() {
     method: "DELETE"
   })
   .done(function(){
-   $(".unstar-job").off();
+   $(".unstar-job").off(); 
   })
   .then(function(){
     renderJobStar();
@@ -148,7 +144,6 @@ function removeCompany() {
     success: function(){ company.remove() }
   })
 }
-
 function addCards(companies) {
   companies.forEach(function (company, index){
     placeMapMarker(company, index);
@@ -186,10 +181,6 @@ function removeCards() {
   $('#companies-body').empty();
 }
 
-function toggleSizeSelect() {
-  $('#sizes').toggle()
-}
-
 function filterCompanies() {
   var filters = getFilters();
   $.when()
@@ -200,7 +191,6 @@ function filterCompanies() {
     .then(addCards)
     .then(centerMap)
   );
-
 }
 
 function getFilters() {
@@ -208,29 +198,16 @@ function getFilters() {
     company_size: [],
     industry_ids: []
   }
-  debugger;
-  var convertedSizes = convertCompanySize($('#sizes').val())
 
-    for (var i = 0; i < convertedSizes.length; i++) {
-      filters['company_size'].push(convertedSizes[i]);
-    }
+  $('#size-options :checked').each(function(index, checkbox) {
+    filters['company_size'].push($(checkbox).val());
+  });
+
   $('#industry-options :checked').each(function(index, checkbox) {
     filters['industry_ids'].push($(checkbox).val());
   });
 
   return filters;
-}
-
-function convertCompanySize(dropdownValue) {
-  var conversion = {
-    "10"  : ["2-10"],
-    "50"  : ["2-10","11-50"],
-    "100" : ["11-50", "51-200"],
-    "200" : ["11-50", "51-200"],
-    "500" : ["11-50", "51-200", "201-500"],
-    "All" : []
-  }
-  return conversion[dropdownValue];
 }
 
 function placeMapMarker(company, index) {
@@ -260,11 +237,9 @@ function placeMapMarker(company, index) {
 }
 
 function initMap() {
-  markers = [];
+  markers = [],
   bounds = new google.maps.LatLngBounds();
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
-    center: {lat: -39.8282, lng: 98.5795}
   });
 }
 
@@ -412,4 +387,5 @@ function deleteNote(note) {
 
 function removeNoteHTML(note) {
   $(`#note-${note.id}`).remove()
+
 }

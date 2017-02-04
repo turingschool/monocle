@@ -12,10 +12,9 @@ Rails.application.routes.draw do
     resources :locations,       only: [:new, :create, :edit, :update, :destroy]
   end
 
-  resources :starred_companies, only: [:create, :destroy]
-  resources :favorites, only: [:index]
+  resources :starred_companies, only: [:index, :create, :destroy]
 
-  resources :starred_jobs, only: [:create, :destroy]
+  resources :starred_jobs, only: [:index, :create, :destroy]
 
   resources :jobs, only: [:index, :show]
 

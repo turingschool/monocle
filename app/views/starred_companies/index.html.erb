@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="well">
+    <div class="container">
+      <% unless @starred_companies.empty? %>
+        <% @starred_companies.each do |company| %>
+          <div class='card-holder col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2' data-id='<%= company.id%>'>
+            <%= render partial: 'shared/company_card', locals: { company:company } %>
+            <span class='btn btn-danger btn-remove'>Remove from starred companies</span>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

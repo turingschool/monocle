@@ -7,12 +7,13 @@
       <li>
         <%= label_tag :size, "Number of Employees" %>
       </li>
-      <% @company_sizes.each do |size| %>
-        <li>
-          <%= check_box_tag 'company_size[]', size[0] %>
-          <%= h size[0] %>
-        </li>
-      <% end %>
+      <li>
+        <%= check_box_tag :company_size %>
+        <%= h "At most X employees" %>
+      </li>
+      <li>
+        <%= select_tag :sizes, options_for_select(company_size), class: "dropdown", style: "display:none" %>
+      </li>
     </div>
     <div class="form-group" id='industry-options'>
       <li>

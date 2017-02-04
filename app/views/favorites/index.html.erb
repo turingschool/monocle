@@ -1,0 +1,47 @@
+<div class="container-fluid text-center">
+  <h1>Favorites</h1>
+</div>
+<div class="container-fluid">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#companies">Companies</a></li>
+    <li><a data-toggle="tab" href="#jobs">Jobs</a></li>
+  </ul>
+</div>
+<div class="tab-content">
+  <div id="companies" class="tab-pane fade in active container-fluid">
+    <h3 class="text-center">My Starred Companies</h3>
+    <% @starred_companies.each do |company| %>
+      <div class='card-holder col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2' data-id='<%= company.id%>'>
+        <%= render partial: 'shared/company_card', locals: { company:company } %>
+        <span class='btn btn-danger btn-remove'>Remove from starred companies</span>
+      </div>
+    <% end %>
+  </div>
+  <div id="jobs" class="tab-pane fade container-fluid">
+    <h3 class="text-center">My Starred Jobs</h3>
+    <div class='well container'>
+      <% @starred_jobs.each do |job| %>
+      <div class='job' data-id=<%= job.uid %> >
+        <table class='table'>
+          <tr>
+            <td><%= link_to job.title, job_path(job.uid) %></td>
+          </tr>
+          <tr>
+            <td>Company: <%= job.company_name %></td>
+          </tr
+          ><tr>
+            <td>Remote: <%= job.remote %></td>
+          </tr>
+          <tr>
+            <td>Posted Date: <%= job.posted_date %></td>
+          </tr>
+          <tr>
+            <td>Location: <%= job.location %></td>
+          </tr>
+        </table>
+        <button class='btn btn-danger btn-remove-job'>Remove from starred jobs</button>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>

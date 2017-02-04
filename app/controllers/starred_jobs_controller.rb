@@ -1,7 +1,4 @@
 class StarredJobsController < ApplicationController
-  def index
-    @jobs = current_user.starred_jobs
-  end
 
   def create
     job = StarredJob.new(starred_job_params.merge({user_id: current_user.id}))

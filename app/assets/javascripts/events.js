@@ -1,6 +1,7 @@
-$(document).ready( function(){
+$(document).ready(function(){
   displayNotes();
   $("#create-note-button").on('click', prepareNoteCreate);
+  // $("#create-private-note-button").on('click', preparePrivateNoteCreate);
   $(".star").on("click", prepareStar);
   $(".unstar").on("click", prepareUnstar);
   $(".star-job").on("click", prepareJobStar);
@@ -138,6 +139,7 @@ function renderJobUnstar() {
   $('.star-toggle').html('<span class="glyphicon glyphicon-star"></span> Unstar');
   $('.star-toggle').removeClass('star-job').addClass('unstar-job');
 }
+
 function removeCompany() {
   var company = this.closest('.card-holder')
   var id = $(company).data('id')
@@ -200,7 +202,6 @@ function filterCompanies() {
     .then(addCards)
     .then(centerMap)
   );
-
 }
 
 function getFilters() {
@@ -208,7 +209,6 @@ function getFilters() {
     company_size: [],
     industry_ids: []
   }
-  debugger;
   var convertedSizes = convertCompanySize($('#sizes').val())
 
     for (var i = 0; i < convertedSizes.length; i++) {
@@ -281,8 +281,6 @@ function centerMap() {
   map.fitBounds(bounds);
 }
 
-
-
 function clearFields() {
   $("#create-note-title").val("")
   $("#create-note-body").val("")
@@ -291,21 +289,21 @@ function clearFields() {
 function prepareNoteCreate(){
     var newNoteTitle = $("#create-note-title");
     var newNoteBody = $("#create-note-body");
-    var user_id = $('#create-note-button').data('userId')
-    var company_id = $('#create-note-button').data('companyId')
-    var author = $('#create-note-button').data('username')
+    var companyName = $("#create-note-company").val();
+    // var userId = $('#create-note-button').data('userId');
+    // var companyId = $('#create-note-button').data('companyId');
+    // var author = $('#create-note-button').data('username');
     var note = { title: newNoteTitle.val(),
-                         body: newNoteBody.val(),
-                         user_id: user_id,
-                         author: author,
-                         company_id: company_id}
+                  body: newNoteBody.val(),
+                }
     return $.ajax({
-      url: "/companies/" + company_id + "/notes",
+      url: "/api/v1/notes",
       method: "POST",
-      data: {note: note}
+      data: {note: note, company_name: companyName}
     })
     .done(renderNote)
     .done(clearFields)
+    .done(window.location.replace("/notes"))
 }
 
 function displayNotes(){
@@ -313,12 +311,19 @@ function displayNotes(){
   $.ajax({
     url: "/api/v1/notes",
     method: "GET",
-    data: {id: company_id},
     type: "json"
   })
-  .then(function(rawNotes){
-    rawNotes.forEach(renderNote);
-  })
+  .then(createNotes)
+  // .then(function(rawNotes){
+  //   rawNotes.forEach(renderNote);
+  // })
+}
+
+function createNotes(raw) {
+  for (var i = 0; i < raw.length; i++) {
+    var note = new Note(raw[i].author,raw[i].title,raw[i].body);
+  }
+
 }
 
 function renderNote(note){

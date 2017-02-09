@@ -24,8 +24,9 @@ class CompaniesController < ApplicationController
       flash[:notice] = "Company is pending approval."
       redirect_to company_path(@company)
     else
-      flash.now[:danger] = @company.errors.full_messages
-      render :new
+      # flash.now[:danger] = @company.errors.full_messages
+      flash[:danger] = "Missing required fields"
+      redirect_to new_company_path
     end
   end
 

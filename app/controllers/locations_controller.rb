@@ -40,7 +40,7 @@ class LocationsController < ApplicationController
 
   private
     def location_params
-      params.require('location').permit(:street_address,
+      params.require(:location).permit(:street_address,
                                         :street_address_2,
                                         :phone,
                                         :primary_contact,

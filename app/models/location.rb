@@ -8,6 +8,7 @@ class Location < ApplicationRecord
 
   enum status: [:pending, :approved, :rejected]
 
+
   def geocode_with_backup
     if geocode.nil?
       self.latitude, self.longitude = Geocoder.coordinates("#{city}, #{state}")

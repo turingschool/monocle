@@ -17,7 +17,7 @@ class CompanyIndex
     Industry.all
   end
 
-  def company_sizes 
+  def company_sizes
     company_size_options
   end
 end

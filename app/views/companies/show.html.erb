@@ -104,18 +104,38 @@
       <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Star
       <% end %>
     <% end %>
-
-    <h3>Public Notes</h3>
-    <div id='notes' class='panel-group'>
-    </div>
-
-    <div class='panel panel-default'>
-      <div class='panel-body'>
-        <input type="text" name="note[title]" id="create-note-title" placeholder="Title"></br></br>
-        <textarea name="note[body]" id="create-note-body" placeholder="Body ..."></textarea></br>
-        <button type="button" name="create-note" id="create-note-button" data-username='<%= current_user.username %>' data-user-id='<%= current_user.id %>' data-company-id='<%= @company.id %>'>Create</button>
+    <div class="panel-group">
+      <div class='panel panel-default'>
+        <h3 class='text-center'>Create Note</h3>
+        <div class='panel-body'>
+          <form>
+            <input type="radio" name="note-status" id="private-note" value="private"> Private Note
+            <input type="radio" name="note-status" id="public-note" value="public"> Public Note</br></br>
+            <input type="text" name="note[title]" id="create-note-title" placeholder="Title"></br></br>
+            <textarea name="note[body]" id="create-note-body" placeholder="Body ..."></textarea></br>
+            <textarea name="note[company]" id="create-note-company" placeholder="Company ..."></textarea></br>
+            <button type="button" name="create-note" id="create-note-button">Create Note</button>
+          </form>
+        </div>
+      </div>
+      <div id="notes-table">
+        <h3 class="text-center">Notes List</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Written On</th>
+              <th>Title</th>
+              <th>Body</th>
+              <th>Privacy Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="notes"></tbody>
+        </table>
       </div>
     </div>
+
   </div>
   </div>
   <div id="lat-lng" data-coordinates="<%= @company.coordinates %>"></div>

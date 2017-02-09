@@ -15,6 +15,7 @@ class Company < ApplicationRecord
 
   enum status: [:pending, :approved, :rejected]
 
+  validates :name, :website, :headquarters, :products_services, :presence => true
   def self.with_locations_near(location_inputs)
     zip      = location_inputs[0]
     distance = location_inputs[1]

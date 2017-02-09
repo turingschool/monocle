@@ -6,6 +6,7 @@ FactoryGirl.define do
     headquarters      { Faker::Address.city + ", " +
                         Faker::Address.state_abbr }
     products_services { Faker::Hipster.paragraph }
+    size              { Faker::Number.number(2)}
   end
 
   factory :note do

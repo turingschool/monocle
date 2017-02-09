@@ -30,7 +30,8 @@ class Admin::CompaniesController < ApplicationController
                                       :headquarters,
                                       :products_services,
                                       :status,
-                                      :logo).merge(size: params[:size])
+                                      :logo,
+                                      :size)
     end
 
     def company_size

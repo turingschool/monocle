@@ -107,6 +107,14 @@ table #locations {
   background-color: #d2d2d2 !important;
 }
 
+
+.element-being-edited {
+  font-style: italic;
+  border-bottom-style: solid;
+  border-bottom-color: light-blue;
+  border-bottom-width: thin;
+}
+
 #zip_input, #distance_select {
   margin-right: 10px;
 }

@@ -5,19 +5,19 @@
     <%= form_for(@company) do |f| %>
     <tr>
       <td><%= f.label :name   %></td>
-      <td><%= f.text_field :name %></td>
+      <td><%= f.text_field :name %> *** Required Field *** <p id="name_req"></p></td>
     </tr>
     <tr>
       <td><%= f.label :website %></td>
-      <td><%= f.text_field :website %></td>
+      <td><%= f.text_field :website %> *** Required Field *** <p id="website_req"></p></td>
     </tr>
     <tr>
       <td><%= f.label :headquarters %></td>
-      <td><%= f.text_field :headquarters %></td>
+      <td><%= f.text_field :headquarters %> *** Required Field *** <p id="headquarters_req"></p></td>
     </tr>
     <tr>
       <td><%= f.label :products_services %></td>
-      <td><%= f.text_field :products_services %></td>
+      <td><%= f.text_field :products_services %> *** Required Field *** <p id="services_req"></p></td>
     </tr>
     <tr>
       <td><%= f.label :size, "Number of Employees:" %></td>
@@ -29,10 +29,12 @@
     </tr>
     <tr>
       <td><%= f.label :industries %></td>
-
-      <td><% @industries.each do |industry| %>
-        <%= check_box_tag 'industry_ids[]', industry.id -%>
-        <%= h industry.name -%><br />
+      <td> *** Required Field ***
+        <br>
+        <br>
+        <% @industries.each do |industry| %>
+          <%= check_box_tag 'industry_ids[]', industry.id -%>
+          <%= h industry.name -%><br />
         <% end %>
       </td>
     </tr>
@@ -46,7 +48,7 @@
       <%= fields_for(@location) do |u| %>
       <tr>
         <td><%= u.label :street_address %></td>
-        <td><%= u.text_field :street_address %></td>
+        <td><%= u.text_field :street_address %> *** Required Field *** <p id="street_address_req"></p></td>
       </tr>
       <tr>
         <td><%= u.label :street_address_2 %></td>
@@ -54,28 +56,28 @@
       </tr>
       <tr>
         <td><%= u.label :phone %></td>
-        <td><%= u.text_field :phone %></td>
+        <td><%= u.text_field :phone %> *** Required Field *** <p id="phone_req"></p></td>
       </tr>
       <tr>
         <td><%= u.label :primary_contact %></td>
-        <td><%= u.text_field :primary_contact %></td>
+        <td><%= u.text_field :primary_contact %> *** Required Field *** <p id="primary_contact_req"></p></td>
       </tr>
       <tr>
         <td><%= u.label :city %></td>
-        <td><%= u.text_field :city %></td>
+        <td><%= u.text_field :city %> *** Required Field *** <p id="city_req"></p></td>
       </tr>
       <tr>
         <td><%= u.label :state %></td>
-        <td><%= select_tag :state, options_for_select(@location.state_options) %></td>
+        <td><%= select_tag :state, options_for_select(@location.state_options) %> *** Required Field ***</td>
       </tr>
       <tr>
         <td><%= u.label :zip_code %></td>
-        <td><%= u.text_field :zip_code %></td>
+        <td><%= u.text_field :zip_code %> *** Required Field *** <p id="zip_req"></p></td>
       </tr>
 
       <% end %>
       <tr>
-        <td colspan="2"><%= f.submit %></td>
+        <td colspan="2" id="create-company" onClick="return checkCompanyFields()"><%= f.submit %></td>
       </tr>
 
     </table>

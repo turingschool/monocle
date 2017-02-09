@@ -16,12 +16,12 @@ end
 
 Capybara.raise_server_errors = false
 
-# require 'vcr'
-#
-# VCR.configure do |config|
-#   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
-#   config.hook_into :webmock
-# end
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+end
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
@@ -74,6 +74,7 @@ def create_unapproved_company(name = 'TestCo')
       website: "www.monocle.com",
       headquarters: "Denver, CO",
       products_services: "Jobs",
+      size: 50,
       status: 0
     })
   company.industries << industry

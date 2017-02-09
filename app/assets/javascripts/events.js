@@ -16,6 +16,8 @@ $(document).ready(function(){
   $("div#industry-options :checkbox").change(filterCompanies);
   $("div#size-options :checkbox").change(toggleSizeSelect);
   $("#size-options").on('change', 'select#sizes', filterCompanies);
+  $('#filter-by-zip').on('click', validateZipThenFilter);
+  $('div#within-distance :checkbox').change(toggleCompaniesWithinDistance);
 
   $.when()
   .then(initMap)
@@ -156,9 +158,11 @@ function removeCompany() {
     success: function(){ company.remove() }
   })
 }
-<<<<<<< HEAD
 
 function addCards(companies) {
+  if (companies.length === 0) {
+    appendNoCompaniesNotice();
+  }
   companies.forEach(function (company, index){
     placeMapMarker(company, index);
     var location = ''
@@ -189,6 +193,10 @@ function addCards(companies) {
         </div>`
     )
   });
+}
+
+function appendNoCompaniesNotice() {
+  $('#companies-body').prepend(`<h1 class='bg-danger text-center'>Looks like you've filtered yourself out of companies!</h1>`)
 }
 
 function removeCards() {
@@ -371,6 +379,11 @@ function removeMapMarkers() {
 }
 
 function centerMap() {
-  map.setCenter(bounds.getCenter());
-  map.fitBounds(bounds);
+  if (markers.length === 0) {
+    map.setCenter({lat: 39.8282, lng: -98.5795})
+    map.setZoom(4)
+  } else {
+    map.setCenter(bounds.getCenter());
+    map.fitBounds(bounds);
+  }
 }

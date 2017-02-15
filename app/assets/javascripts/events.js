@@ -218,18 +218,18 @@ function clearFields() {
 }
 
 function prepareNoteCreate(){
-    var note = { title: $("#create-note-title").val(),
-                  body: $("#create-note-body").val(),
-                  status: $(':radio:checked').val()
-                }
+  var note = { title: $("#create-note-title").val(),
+                body: $("#create-note-body").val(),
+                status: $(':radio:checked').val()
+              }
 
-    return $.ajax({
-      url: "/api/v1/notes",
-      method: "POST",
-      data: {note: note, company_ids: $("#create-note-company").val()}
-    })
-    .done(clearFields)
-    .done(window.location.replace("/notes"))
+  return $.ajax({
+    url: "/api/v1/notes",
+    method: "POST",
+    data: {note: note, company_ids: $("#create-note-company").val()}
+  })
+  .done(clearFields)
+  .done(window.location.replace("/notes"))
 }
 
 function displayNotes(){
@@ -289,7 +289,6 @@ function filterCompanies() {
     .then(addCards)
     .then(centerMap)
   );
-
 }
 
 function getFilters() {

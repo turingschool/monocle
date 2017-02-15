@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
         render file: "/public/404", status: 404, layout: false
       end
     end
-
+    
     def authorized?
       return true if current_user
       return true if params[:controller] == "sessions" && params[:action].in?(%w(show new create))

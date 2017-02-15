@@ -90,5 +90,4 @@ class Note {
   removeNoteHTML() {
     $(`#note-${this.id}`).remove()
   }
-
 }

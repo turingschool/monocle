@@ -40,7 +40,7 @@
             </li>
             <% else %>
               <li>
-                <a>Signed in as <strong><%= current_user.username %></strong></a>
+                <a>Signed in as <strong><%= current_user.username %></strong> </a>
               </li>
           <% end %>
           <li><%= button_to "Sign Out", logout_path, class: "btn btn-default navbar-btn" %></li>

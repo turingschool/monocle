@@ -6,7 +6,6 @@ function initMap() {
     zoom: 15,
     center: uluru
   });
-
   <% @companies.each_with_index do |company, index| %>
     var coordinates = <%= company.get_coordinates.html_safe %>;
     var infowindow<%= index %> = new google.maps.InfoWindow({
@@ -32,5 +31,5 @@ function initMap() {
   map.fitBounds(bounds);
 }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['google_maps_key']%>&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_key'] %>&callback=initMap">
 </script>

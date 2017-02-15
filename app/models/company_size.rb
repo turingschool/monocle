@@ -23,5 +23,4 @@ module CompanySize
       '10001+'
     ]
   end
-
 end

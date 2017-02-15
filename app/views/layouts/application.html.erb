@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all'  %>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_key'] %>&callback=initMap"></script>
     <%= javascript_include_tag 'application' %>
     <!-- From: https://getbootstrap.com/getting-started/#download -->
     <!-- Latest compiled and minified CSS -->
@@ -18,6 +19,6 @@
     <%= render partial: "layouts/navbar" %>
     <%= bootstrap_flash %>
     <%= render partial: "shared/flash" %>
-    <%= yield %>
+      <%= yield %>
   </body>
 </html>

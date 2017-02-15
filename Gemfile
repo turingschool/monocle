@@ -60,7 +60,6 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'rake'
-  gem 'database_cleaner'
 end
 
 group :development do

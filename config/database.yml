@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: monocle_production
+  database: monocle-production
   username: monocle
-  password: <%= ENV['MONOCLE_DATABASE_PASSWORD'] %>

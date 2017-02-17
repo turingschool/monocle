@@ -37,12 +37,11 @@ gem 'omniauth'
 gem 'omniauth-slack', github: 'kmrshntr/omniauth-slack'
 gem 'omniauth-census', git: "https://github.com/turingschool-projects/omniauth-census"
 gem 'geocoder'
-gem 'travis'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'babel-transpiler'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'travis'
   gem 'byebug', platform: :mri
   gem 'pry-rails'
   gem "factory_girl_rails", "~> 4.0"

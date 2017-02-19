@@ -4,6 +4,7 @@ RSpec.describe 'As an authenticated user' do
   context 'when I click favorites' do
     it "shows a list of starred companies" do
       user_logs_in
+      
       user = User.first
       companies = create_list(:company, 1)
       new_company = create(:company)

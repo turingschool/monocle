@@ -4,20 +4,16 @@
     <table class="table">
     <%= form_for(@company) do |f| %>
     <tr>
-      <td><%= f.label :name   %><span class='required'>*</span></td>
-      <td><%= f.text_field :name, class: 'required-field' %></td>
+      <td><%= f.label :name %><span class='required'>*</span></td>
+      <td><%= f.text_field :name %></td>
     </tr>
     <tr>
-      <td><%= f.label :website %><span class='required'>*</span></td>
-      <td><%= f.text_field :website, class: 'required-field' %><p id="website_req"></p></td>
+      <td><%= f.label :website %></td>
+      <td><%= f.text_field :website %></td>
     </tr>
     <tr>
-      <td><%= f.label :headquarters %><span class='required'>*</span></td>
-      <td><%= f.text_field :headquarters, class: 'required-field' %><p id="headquarters_req"></p></td>
-    </tr>
-    <tr>
-      <td><%= f.label :products_services %><span class='required'>*</span></td>
-      <td><%= f.text_field :products_services, class: 'required-field' %><p id="services_req"></p></td>
+      <td><%= f.label :products_services %></td>
+      <td><%= f.text_field :products_services %></td>
     </tr>
     <tr>
       <td><%= f.label :size, "Number of Employees:" %></td>
@@ -28,7 +24,7 @@
       <td><%= f.file_field :logo, accept: 'image/jpg,image/jpeg,image/png' %></td>
     </tr>
     <tr>
-      <td><%= f.label :industries %><span class='required'>*</span></td>
+      <td><%= f.label :industries %></td>
       <td id='industry-checkboxes'>
         <br>
         <br>
@@ -47,32 +43,32 @@
 
       <%= fields_for(@location) do |u| %>
       <tr>
-        <td><%= u.label :street_address %><span class='required'>*</span></td>
-        <td><%= u.text_field :street_address, class: 'required-field' %><p id="street_address_req"></p></td>
+        <td><%= u.label :street_address %></td>
+        <td><%= u.text_field :street_address %></td>
       </tr>
       <tr>
         <td><%= u.label :street_address_2 %></td>
         <td><%= u.text_field :street_address_2 %></td>
       </tr>
       <tr>
-        <td><%= u.label :phone %><span class='required'>*</span></td>
-        <td><%= u.text_field :phone, class: 'required-field' %><p id="phone_req"></p></td>
+        <td><%= u.label :phone %></td>
+        <td><%= u.text_field :phone %></td>
       </tr>
       <tr>
-        <td><%= u.label :primary_contact %><span class='required'>*</span></td>
-        <td><%= u.text_field :primary_contact, class: 'required-field' %><p id="primary_contact_req"></p></td>
+        <td><%= u.label :primary_contact %></td>
+        <td><%= u.text_field :primary_contact %></td>
       </tr>
       <tr>
-        <td><%= u.label :city %><span class='required'>*</span></td>
-        <td><%= u.text_field :city, class: 'required-field' %><p id="city_req"></p></td>
+        <td><%= u.label :city %></td>
+        <td><%= u.text_field :city %></td>
       </tr>
       <tr>
-        <td><%= u.label :state %><span class='required'>*</span></td>
-        <td><%= select_tag :state, options_for_select(@location.state_options), class: 'required-field' %></td>
+        <td><%= u.label :state %></td>
+        <td><%= select_tag :state, options_for_select(@location.state_options) %></td>
       </tr>
       <tr>
-        <td><%= u.label :zip_code %><span class='required'>*</span></td>
-        <td><%= u.text_field :zip_code, class: 'required-field' %><p id="zip_req"></p></td>
+        <td><%= u.label :zip_code %></td>
+        <td><%= u.text_field :zip_code %></td>
       </tr>
       <tr>
         <td colspan="2" id="create-company"><%= f.submit %></td>

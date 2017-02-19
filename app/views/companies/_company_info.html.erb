@@ -1,12 +1,11 @@
-<div class="container">
   <div class="col-md-3">
     <br>
     <div class='big-logo'>
       <%= image_tag @company.logo.url %>
     </div>
   </div>
-  <div class="col-md-9">
-    <h3>Company Information</h3>
+  <div class="col-md-3">
+    <h4>Company Information</h4>
     <table class="table-condensed table-hover">
       <tr>
         <th>Products/Services:</th>
@@ -15,10 +14,6 @@
       <tr>
         <th>Website:</th>
         <td><%= link_to @company.website, "http://#{@company.website}", :target => "_blank" %></td>
-      </tr>
-      <tr>
-        <th>Headquarters:</th>
-        <td><%= @company.headquarters %></td>
       </tr>
       <tr>
         <th># of Employees:</th>
@@ -33,7 +28,6 @@
       </tr>
     </table>
     <% if current_user.admin? %>
-    <%= link_to 'Edit Company Information', edit_admin_company_path(@company), class: "btn btn-default" %>
+      <%= link_to 'Edit Company Information', edit_admin_company_path(@company), class: "btn btn-default" %>
     <% end %>
   </div>
-</div>

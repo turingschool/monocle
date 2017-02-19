@@ -14,7 +14,7 @@ body {
   padding-top: 70px;
 }
 
- .logo img {
+.logo img {
    position: absolute;
    top: 0;
    bottom: 0;
@@ -26,7 +26,7 @@ body {
    max-height: 95px;
  }
 
- .card {
+.card {
   border-radius: 2px;
   border: 1px solid #000000;
   padding: 5px;
@@ -86,16 +86,12 @@ body {
 }
 
 #company-map {
+  float: right;
   border: 1.5px solid;
   top: 20px;
-  height: 400px;
-  width: 100%;
+  height: 450px;
+  width: 60%;
 }
-
-.locations-container {
-  margin-top: 50px
-}
-
 
 .edit-box {
   background-color: #d2d2d2 !important;
@@ -122,4 +118,28 @@ body {
 
 .required-error {
   width: 150px;
+}
+
+#add-location-button {
+  float: right;
+}
+
+.favorites-button {
+  top: 420px;
+  position: relative;
+  float: left;
+}
+
+.container {
+  height: 820px;
+  border: 1px solid black;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+.add-findings {
+  display: inline-block;
+  position: absolute;
+  left: 170px;
+  top: 400px;
 }

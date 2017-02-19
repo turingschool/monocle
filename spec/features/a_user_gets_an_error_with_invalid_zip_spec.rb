@@ -9,7 +9,6 @@ RSpec.describe 'As a logged in user' do
   context 'when I visit /companies' do
     VCR.use_cassette('comapanies_filtering') do
       xscenario 'I enter an invalid zipcode and get an error', :js => true do
-
         denver_co  = create_denver_company
         boulder_co = create_boulder_company
 

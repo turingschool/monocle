@@ -15,7 +15,7 @@ RSpec.describe 'user adds address to company' do
       fill_in 'location_zip_code', with: '80111'
       click_on "Submit New Location For #{company.name}"
 
-      expect(page).to have_content('Location pending approval by moderator')
+      expect(page).to have_content('Location pending approval')
       expect(page).to_not have_content('Nate Anderson')
     end
   end

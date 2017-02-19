@@ -16,7 +16,8 @@ class Company < ApplicationRecord
 
   enum status: [:pending, :approved, :rejected]
 
-  validates :name, :website, :headquarters, :products_services, :presence => true
+  validates :name, :presence => true
+
   def self.with_locations_near(location_inputs)
     zip      = location_inputs[0]
     distance = location_inputs[1]
@@ -54,6 +55,10 @@ class Company < ApplicationRecord
     self.locations.where('status = ?', '1')
   end
 
+  def pending_locations
+    self.locations.where('status = ?', '0')
+  end
+
   def get_coordinates
     if locations.first
       locations.first.coordinates
@@ -83,8 +88,8 @@ class Company < ApplicationRecord
   end
 
   def attach_industries_and_location(industries, state, location_params)
-    assign_industries(industries)
-    attach_location(location_params, state)
+    assign_industries(industries) if industries
+    attach_location(location_params, state) if location_params && state
   end
 
   def assign_industries(industry_ids)

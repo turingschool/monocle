@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root                            to: 'sessions#show'
   get  '/auth/:provider/callback',    to: 'sessions#create'
   post '/logout',                 to: 'sessions#destroy'
-  get  '/sign_in_with_slack',     to: 'sessions#new'
   get  '/sign_in_with_census',    to: 'sessions#new'
   get  'companies/notes/delete',  to: 'notes#destroy'
 
@@ -17,6 +16,7 @@ Rails.application.routes.draw do
   resources :starred_jobs, only: [:create, :destroy]
 
   resources :jobs, only: [:index, :show]
+  resources :findings, only: [:new, :create]
 
   namespace :moderator do
     resources :companies,       only: [:edit, :update]
@@ -34,7 +34,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :companies,       only: [:index] do
+      get '/companies/find', to: 'company_search#show', as: 'find_company'
+      resources :companies,       only: [:index, :create] do
         resources :locations,     only: [:index, :update]
       end
       resources :notes, only: [:index, :create, :update, :destroy]

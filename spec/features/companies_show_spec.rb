@@ -16,7 +16,6 @@ RSpec.feature "User navigates to individual companies page", type: :feature do
       expect(page).to have_content(company.locations.first.city_state_zip)
       expect(page).to have_content(company.locations.first.phone)
       expect(page).to have_content(company.website)
-      expect(page).to have_content(company.headquarters)
       expect(page).to have_content(company.products_services)
       expect(page).to have_content(company.size)
       expect(page).to have_content(company.locations.first.primary_contact)

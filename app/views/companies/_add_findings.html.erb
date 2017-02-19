@@ -1,0 +1,16 @@
+<div class="add-findings">
+  <h4>Add Findings</h4>
+  <%= form_for @finding do |f| %>
+    <div id="viability">
+      <%= f.label :viability %>
+      <%= f.select(:viability, options_for_select(1..5), include_blank: true) %>
+    </div>
+    <div id="hiring">
+      <%= f.label :hiring %>
+      <%= f.check_box(:hiring) %>
+    </div>
+    <div>
+      <%= f.submit "Submit findings", class:"btn btn-default"%>
+    </div>
+  <% end %>
+</div>

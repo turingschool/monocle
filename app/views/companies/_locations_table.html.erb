@@ -1,6 +1,5 @@
-<div class="locations-container">
-
-  <h4>Approved Location(s):</h4>
+<div class="col-md-3 locations-table">
+  <span id="title-approved-locations"></span>
 
   <table id="approved-location-table" class="table">
     <tr>
@@ -14,7 +13,7 @@
     </tbody>
   </table>
 
-  <h4>Pending Location(s):</h4>
+  <span id="title-pending-locations"></span>
 
   <table id="pending-location-table" class="table">
     <tr>
@@ -22,23 +21,29 @@
       <th>City,&nbspState,&nbspZip</th>
       <th>Phone</th>
       <th>Primary&nbspContact</th>
-      <th>Approve</th>
+      <th></th>
     </tr>
     <tbody id="pending-location-table-body">
     </tbody>
   </table>
 
-  <%= link_to 'Add Location', new_company_location_path(@company), class: "btn btn-default" %>
+  <%= link_to 'Add Location', new_company_location_path(@company), class: "btn btn-default", id: "add-location-button" %>
+
+  <div id="company-id" data-company-id='<%= @company.id %>'></div>
+  <div id="lat-lng" data-coordinates="<%= @company.coordinates %>"></div>
+  <div id="current-user-role" data-role="<%= current_user.role %>"></div>
 </div>
+
 
 <script type="text/javascript">
     var coordinates = $('#lat-lng').data('coordinates');
+    var userRole = $('#current-user-role').data('role');
 
     displayCompanyLocations();
+
     $("#pending-location-table-body").on('click', '#admin-approves-location', function() {
       var locationId = this.getAttribute('data-id');
       adminApproveLocation(locationId);
-      initCompanyMap(); 
     });
 
     $("#approved-location-table-body").on('click', '#admin-edit-location', function() {
@@ -49,6 +54,7 @@
 
   function displayCompanyLocations() {
     var companyId = $('#company-id').data('companyId');
+
     $.ajax({
       url: "/api/v1/companies/" + companyId + "/locations",
       method: "GET",
@@ -69,6 +75,7 @@
       type: "json",
       success: function () {
         displayCompanyLocations();
+        initCompanyMap();
       }
     })
   }
@@ -76,35 +83,90 @@
   function appendLocations(locations) {
     $('#pending-location-table-body').slice(0).empty()
     $('#approved-location-table-body').slice(0).empty()
+
+    var pendingLocations = [];
+    var approvedLocations = [];
+
     locations.forEach(function(location){
       if (location.status === "pending") {
-        appendPendingLocation(location);
+        pendingLocations.push(location);
       } else if (location.status === "approved") {
-        appendApprovedLocation(location);
+        approvedLocations.push(location);
       }
     })
+
+    pendingLocations.forEach(function(location){
+      appendPendingLocation(location);
+    })
+
+    approvedLocations.forEach(function(location){
+      appendApprovedLocation(location);
+    })
+
+    if (pendingLocations.length === 0) {
+      $('#pending-location-table').css('display', 'none')
+      $('#title-pending-locations').css('display', 'none')
+    } else if (pendingLocations.length === 1) {
+      $('#title-pending-locations').slice(0).empty()
+      $('#title-pending-locations').append('<h4>Pending Location</h4>')
+    } else {
+      $('#title-pending-locations').slice(0).empty()
+      $('#title-pending-locations').append('<h4>Pending Locations</h4>')
+    }
+
+    if (approvedLocations.length === 0) {
+      $('#approved-location-table').css('display', 'none')
+      $('#title-approved-locations').css('display', 'none')
+    } else if (approvedLocations.length === 1) {
+      $('#title-approved-locations').slice(0).empty()
+      $('#title-approved-locations').append('<h4>Approved Location</h4>')
+    } else {
+      $('#title-approved-locations').slice(0).empty()
+      $('#title-approved-locations').append('<h4>Approved Locations</h4>')
+    }
   }
 
   function appendPendingLocation(location) {
-    var row = `<tr>
-                  <td>${location.street_address}</td>
-                  <td>${location.city_state_zip}</td>
-                  <td>${location.phone}</td>
-                  <td>${location.primary_contact}</td>
-                  <td><button id='admin-approves-location' data-id=${location.id}>Approve</button></td>
-               </tr>`
+    var row, address = location.street_address;
+
+    if (location.street_address_2 !== ""){
+      address += `, ${location.street_address_2}`
+    }
+
+    if (userRole === "admin") {
+      row = `<tr>
+               <td>${address}</td>
+               <td>${location.city_state_zip}</td>
+               <td>${location.phone}</td>
+               <td>${location.primary_contact}</td>
+               <td><button id='admin-approves-location' data-id=${location.id}>Approve</button></td>
+           </tr>`
+    } else {
+      row = `<tr>
+               <td>${address}</td>
+               <td>${location.city_state_zip}</td>
+               <td>${location.phone}</td>
+               <td>${location.primary_contact}</td>
+           </tr>`
+    }
 
     $('#pending-location-table-body').append(row)
   }
 
   function appendApprovedLocation(location) {
+    var address = location.street_address;
+
+    if (location.street_address_2 !== ""){
+      address += `, ${location.street_address_2}`
+    }
+
     var row = `<tr>
-                  <td>${location.street_address}</td>
-                  <td>${location.city_state_zip}</td>
-                  <td>${location.phone}</td>
-                  <td>${location.primary_contact}</td>
-                  <td><button id='admin-edit-location' data-id=${location.id}>Edit</button></td>
-               </tr>`
+                <td>${address}</td>
+                <td>${location.city_state_zip}</td>
+                <td>${location.phone}</td>
+                <td>${location.primary_contact}</td>
+                <td><button id='admin-edit-location' data-id=${location.id}>Edit</button></td>
+              </tr>`
 
     $('#approved-location-table-body').append(row)
   }

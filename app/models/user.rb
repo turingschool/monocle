@@ -9,14 +9,6 @@ class User < ApplicationRecord
 
   enum role: [:standard, :moderator, :admin]
 
-  def self.create_from_slack(user_info)
-    user = find_or_initialize_by(slack_uid: user_info["uid"]) do |u|
-      u.username = user_info.info["name"]
-    end
-    user.slack_access_token = user_info.credentials["token"]
-    user.save ? user : false
-  end
-
   def self.create_from_census(user_info)
     user = find_or_initialize_by(census_uid: user_info["uid"]) do |u|
       if user_info.info["first_name"] && user_info.info["last_name"]
@@ -37,7 +29,7 @@ class User < ApplicationRecord
     end
 
     def user_must_have_fields_for_provider
-      unless (username && (slack_uid || census_uid) && (slack_access_token || census_access_token))
+      unless username && census_uid && census_access_token
         errors.add(:username, "is missing data")
       end
     end

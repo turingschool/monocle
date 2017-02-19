@@ -11,7 +11,6 @@ contact = Industry.create(name: 'Contact Management')
 granicus = Company.create(
                 name: "Granicus",
                 website: "www.granicus.com",
-                headquarters: "Denver, CO",
                 products_services: "Computer Software",
                 status: "approved",
                 size: "51-200",
@@ -29,7 +28,6 @@ granicus.industries << cs
 spotx = Company.create(
                 name: "SpotX",
                 website: "www.spotxchange.com",
-                headquarters: "Denver, CO",
                 products_services: "Software",
                 status: "approved",
                 size: "201-500",
@@ -47,7 +45,6 @@ spotx.industries << internet
 mondorobot = Company.create(
                 name: "MondoRobot",
                 website: "www.mondorobot.com",
-                headquarters: "Boulder, CO",
                 products_services: "Digital Strategies, UI & UX Design, Video & Animation, Mobile & Tablet, Applications, Websites, Virtual Reality, Digital Installations, Augmented Reality, Social Experiences, Branding & Identities, Interactive Games",
                 status: "approved",
                 size: "11-50",
@@ -65,7 +62,6 @@ mondorobot.industries << marketing
 captainu = Company.create(
                 name: "Captain U",
                 website: "www.captainu.com",
-                headquarters: "San Francisco, CA",
                 products_services: "Computer Software",
                 status: "approved",
                 size: "11-50",
@@ -83,7 +79,6 @@ captainu.industries << sports
 wazee = Company.create(
                 name: "Wazee Digital",
                 website: "www.wazeedigital.com/",
-                headquarters: "Denver, CO",
                 products_services: "cloud-based storage, access, and licensing for enterprise-scale video libraries",
                 status: "approved",
                 size: "51-200",
@@ -101,7 +96,6 @@ wazee.industries << media
 parkifi = Company.create(
                 name: "ParkiFi",
                 website: "denver.parkifi.com/",
-                headquarters: "Denver, CO",
                 products_services: "Real time parking assistance",
                 status: "approved",
                 size: "11-50",
@@ -119,7 +113,6 @@ parkifi.industries << transportation
 tokken = Company.create(
                 name: "Tokken",
                 website: "tokken.com",
-                headquarters: "Denver, CO",
                 products_services: "Financial Products for the cannabis industry",
                 status: "approved",
                 size: "2-10",
@@ -138,7 +131,6 @@ tokken.industries << financial
 gospotcheck = Company.create(
                 name: "GoSpotCheck",
                 website: "gospotcheck.com",
-                headquarters: "Denver, CO",
                 products_services: "Web apps for field operations",
                 status: "approved",
                 size: "51-200",
@@ -157,7 +149,6 @@ gospotcheck.industries << cs
 rachio = Company.create(
                 name: "Rachio",
                 website: "rachio.com",
-                headquarters: "Denver, CO",
                 products_services: "Smart sprinklers",
                 status: "approved",
                 size: "11-50",
@@ -175,7 +166,6 @@ rachio.industries << iot
 fullcontact = Company.create(
               name: 'FullContact',
                website: 'fullcontact.com',
-               headquarters: 'Denver, CO',
                products_services: 'FullContact is the most powerful fully-connected contact management platform for professionals and enterprises who need to master their contacts and be awesome with people.',
                status: 'approved',
                size: '51-200',
@@ -193,7 +183,6 @@ fullcontact.industries << contact
 sendgrid = Company.create(
                name: 'SendGrid',
                website: 'sendgrid.com',
-               headquarters: 'Denver, CO',
                products_services: 'Delivers transactional and marketing emails through one reliable platform.',
                status: 'approved',
                size: '201-500',
@@ -212,7 +201,6 @@ sendgrid.industries << contact
 cachematrix = Company.create(
                name: 'CacheMatrix',
                website: 'cachematrix.com',
-               headquarters: 'Denver, CO',
                products_services: 'Cachematrix simplifies cash management for leading banks and their corporate clients.',
                status: 'approved',
                size: '51-200',

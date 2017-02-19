@@ -34,11 +34,12 @@ gem 'faraday'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'fog-aws'
 gem 'omniauth'
-gem 'omniauth-slack', github: 'kmrshntr/omniauth-slack'
 gem 'omniauth-census', git: "https://github.com/turingschool-projects/omniauth-census"
 gem 'geocoder'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'babel-transpiler'
+gem 'thin'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'travis'
@@ -48,7 +49,7 @@ group :development, :test do
   gem 'faker'
   gem 'launchy'
   gem 'capybara'
-  gem 'selenium-webdriver', '~> 2.53.4'
+  gem 'selenium-webdriver'
   # gem 'poltergeist'
 end
 

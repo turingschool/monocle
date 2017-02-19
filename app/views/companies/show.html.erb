@@ -1,60 +1,66 @@
-<div id="company-id" data-company-id='<%= @company.id %>'></div>
 <div class="container">
-  <div class="well">
     <h1 class="company-name"><%= @company.name %></h1>
-    <%= render partial: 'company_info' %>
-    <section id="company-map"></section>
-    <%= render partial: 'locations_table' %>
-  </div>
-
-    <% if current_user.companies.exists?(@company.id) %>
-      <div class='starred-message'>
-        <h4><i class="text-info">
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> This company has been saved in your starred list.
-        </i></h4>
+      <div class="company-info-and-locations-table">
+        <%= render partial: 'company_info' %>
+        <%= render partial: 'locations_table' %>
       </div>
+
+      <div class="add-findings-and-map">
+        <%= render partial: 'add_findings' %>
+        <div id="company-map"></div>
+      </div>
+
+  <div class="favorites-button">
+    <% if current_user.companies.exists?(@company.id) %>
+    <div class='starred-message'>
+      <h4><i class="text-info">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> This company has been saved in your starred list.
+      </i></h4>
+    </div>
       <%= button_tag class: "btn btn-default btn-lg unstar star-toggle", data: {no_turbolink: true, id: @company.id} do %>
-      <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Unfavorite
+        <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Unfavorite
       <% end %>
     <% else %>
       <div class='starred-message'></div>
       <%= button_tag class: "btn btn-default btn-lg star star-toggle", data: {no_turbolink: true, id: @company.id} do %>
-      <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Favorite
+        <%= content_tag("span", "", class: ["glyphicon", "glyphicon-star"], aria_hidden: true) %> Favorite
       <% end %>
     <% end %>
-    <div class="panel-group">
-      <div class='panel panel-default'>
-        <h3 class='text-center'>Create Note</h3>
-        <div class='panel-body'>
-          <form>
-            <input type="radio" name="note-status" id="private-note" value="private"> Private Note
-            <input type="radio" name="note-status" id="public-note" value="public"> Public Note</br></br>
-            <input type="text" name="note[title]" id="create-note-title" placeholder="Title"></br></br>
-            <textarea name="note[body]" id="create-note-body" placeholder="Body ..."></textarea></br>
-            <textarea name="note[company]" id="create-note-company" placeholder="Company ..."></textarea></br>
-            <button type="button" name="create-note" id="create-note-button">Create Note</button>
-          </form>
-        </div>
-      </div>
-      <div id="notes-table">
-        <h3 class="text-center">Notes List</h3>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Written On</th>
-              <th>Title</th>
-              <th>Body</th>
-              <th>Privacy Status</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="notes"></tbody>
-        </table>
-      </div>
-    </div>
+  </div>
+</div>
+<div class="notes-container">
 
+<div class="panel-group">
+  <div class='panel panel-default'>
+    <h3 class='text-center'>Create Note</h3>
+    <div class='panel-body'>
+      <form>
+        <input type="radio" name="note-status" id="private-note" value="private"> Private Note
+        <input type="radio" name="note-status" id="public-note" value="public"> Public Note</br></br>
+        <input type="text" name="note[title]" id="notetitle" placeholder="Title"></br></br>
+        <textarea name="note[body]" id="notebody" placeholder="Body ..."></textarea></br>
+        <script>
+          CKEDITOR.replace( 'note[body]' );
+        </script>
+        <button type="button" name="create-note" id="create-note-button">Create Note</button>
+      </form>
+    </div>
   </div>
+  <div id="notes-table">
+    <h3 class="text-center">Notes List</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Written On</th>
+          <th>Title</th>
+          <th>Body</th>
+          <th>Privacy Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="notes"></tbody>
+    </table>
   </div>
-  <div id="lat-lng" data-coordinates="<%= @company.coordinates %>"></div>
+</div>
 <script src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['google_maps_key']%>&callback=initCompanyMap"></script>

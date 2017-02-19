@@ -54,4 +54,6 @@
 <% end %>
 <br>
 <br>
-<%= link_to 'Delete Location', admin_location_path(company_id: @company.id, id: @location.id), method: :delete, data: {confirm: "Are you sure you want to delete this location?"}, class:"btn btn-danger"  %>
+<% if current_user.admin? %>
+  <%= link_to 'Delete Location', admin_location_path(company_id: @company.id, id: @location.id), method: :delete, data: {confirm: "Are you sure you want to delete this location?"}, class:"btn btn-danger"  %>
+<% end %>

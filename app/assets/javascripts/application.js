@@ -16,5 +16,4 @@
 //= require formatted_date
 //= require note
 //= require company_show
-//= require validations
 //= require events
